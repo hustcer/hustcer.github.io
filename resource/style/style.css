@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.reading-list{margin-top: 30px;margin-bottom: 65px;}
+.handsontable{font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;}
+.handsontable .htDimmed{font-style: normal;color:#333;font-size: 13px;border-left: 0!important;border-right: 0;
+    line-height: 28px;border-bottom: 1px solid #DADADA;
+}
+.handsontable th{color:#000;font-size: 13px;border-left: 0;border-right: 0;border-top: 0;background-color: #CACACA;}
+.handsontable .finished{color: rgb(21, 163, 21);}
+.handsontable .in-reading{color: #C40000;}
+.handsontable .waiting-list{color: #BBB;}
+.handsontable .star{color: rgb(143, 140, 127);}

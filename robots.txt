@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /404.html
+Allow: /
+Sitemap: http://topdna.org/sitemap.xml
