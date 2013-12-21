@@ -4,19 +4,130 @@
   <subtitle><![CDATA[Since 2013/09/01 &nbsp;&nbsp;&nbsp;&nbsp;小站新开，欢迎常来]]></subtitle>
   <link href="http://topdna.org/atom.xml" rel="self"/>
   <link href="http://topdna.org"/>
-  <updated>2013-10-21T09:45:04.458Z</updated>
+  <updated>2013-12-21T08:06:31.109Z</updated>
   <id>http://topdna.org/</id>
   <author>
     <name><![CDATA[hustcer]]></name>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[关于美国资本利得税]]></title>
+    <link href="http://topdna.org/investment/capital-gains-tax/"/>
+    <id>http://topdna.org/investment/capital-gains-tax/</id>
+    <published>2013-12-20T13:11:31.000Z</published>
+    <updated>2013-12-21T08:06:24.000Z</updated>
+    <content type="html"><![CDATA[<h2>概论</h2>
+<p>四月十五是美国非常重要的日子，因为那一天是美国报税的截止日。我们工作、投资等各种收入都必须付税，因此若能够彻底了解税与投资的关系，您可以建立对您最有税利的投资策略，增加税后收入。报税的过程往往十分复杂又耗时间，在此提醒您平日将您的所有投资交易资料整理好，有备无患。第一理财税务中心可以提供您一些基本的税务知识，若您还有其他较深的疑问，请与您的会计师或税务顾问联络。</p>
+<h2>专有名词</h2>
+<p>在我们开始之前，请先看看一些税务专有名词：</p>
+<table>
+<thead>
+<tr>
+<th align="left">术语</th>
+<th align="left">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Schedule D</td>
+<td align="left">用来呈报投资资产损益的表格。若您今年有卖出股票，国税局规定您必须交此表。</td>
+</tr>
+<tr>
+<td align="left">Dividends 股息</td>
+<td align="left">公司利益发放给股东的金额。联邦课税级别不同的投资人股息税率不同，通常为 5% 至 15%。</td>
+</tr>
+<tr>
+<td align="left">Interest Income 利息收入</td>
+<td align="left">来自於利息的投资收入。发放利息的投资项目包含国债、公司债、储蓄债券、定期存单、活动存款等等。</td>
+</tr>
+<tr>
+<td align="left">1099</td>
+<td align="left">若您该年投资活动有卖出证券，或累积利息超过 $10.00，您就会收到此表格。您必须有社会安全卡号码，用此表格与国税局报税。此表格一月底之前会发放给投资人。表格内资料包含股息、不合格股息、利息、资本收益、海外预扣税、卖出资讯。</td>
+</tr>
+<tr>
+<td align="left">1099-R</td>
+<td align="left">若您该年有存 IRA 退休帐户提款，就会收到此表格。提款行为包含存款超过上限、提早提款、规定最低提款 (RMD)，以及转换成罗斯 IRA。此表格一月底之前会发放给投资人。</td>
+</tr>
+<tr>
+<td align="left">1042-S</td>
+<td align="left">此表格发放给所有国际帐户持有人，於四月寄出。</td>
+</tr>
+<tr>
+<td align="left">Trade Confirmations 交易认证</td>
+<td align="left">当订单成交我们会自动寄出 (或用电子档案) 认证，内容包含交易的所有细节。为了您报税便利，请务必好好保管这些交易纪录，计算应负税。</td>
+</tr>
+<tr>
+<td align="left">Trade Settlement 交易交割</td>
+<td align="left">股票交易成交后卖方必须交予股票，及买方必须付款的日期。一般证券交割为 T+3，交易日的第三个工作天。期权及某些共同基金交割只需一个工作天。</td>
+</tr>
+<tr>
+<td align="left">Gain/Loss 已实现 / 未实现益损</td>
+<td align="left">若股票平仓后会造成益损，称为未实现益损。已经平仓且发生的投资益损则称为已实现益损。报税时只需计算已实现益损。</td>
+</tr>
+<tr>
+<td align="left">Ordinary (Qualified) Dividends 一般股息</td>
+<td align="left">2003 年 Jobs and Growth Tax Relief Reconciliation 法案 (2003 年五月生效) 订定一般股息可以较低税率计算所得税。此股息必须来自於美国公司、或合格外国公司。股息要被算为合格股息，必须达到持有时间规定。(通常股息税率为 15% 或更低)</td>
+</tr>
+<tr>
+<td align="left">Non-Qualified Dividends 不合格股息</td>
+<td align="left">不能以较低税率计算所得税的股息。这些股息以一般所得税率计算。(所有未持有 61 天的共同基金股息都算为不合格股息)。</td>
+</tr>
+</tbody>
+</table>
+<h2>计算资本损益</h2>
+<p>美国国税局规定投资人需要再以实现利益缴税，而已实现利益又可以被以实现亏损抵消。若一个投资人於一个税年内已实现亏损超出利益，亏损额甚至可以抵消该年的所得收入，已 $3,000 为上限。您规划投资理财策略时，务必将税的影响纳入其中。</p>
+<p>一个很重要的观念就是未实现益损若今年不去实现 (平仓)，则不会影响今年税务而直截跨入隔年。因此若您认为短期内您的股票不会有大幅变动，可以考虑是否要买进 / 卖出该证券，实现益损以降低所得税负担。</p>
+<p>股票的成本计算方式为买价加上佣金或其他的调整项目。若卖出后扣掉成本有赚钱，该金额算为资本利益。若平仓后是赔钱，则为资本亏损。请看以下例子解释资本损益计算：</p>
+<p>假设李先生买进了 10 股的 XYZ，每股 $20.00，同时支付佣金 $10.00。这笔交易的成本为 10 x $20.00/ 股 = $200.00 + $10.00 (佣金) = $210.00。</p>
+<p>接下来有两种可能：</p>
+<ul>
+<li><p>李先生决定以每股 $25.00 的价钱卖出 XYZ 股票 (佣金 = $10.00)。李先生计算这笔交易为：10 x $25.00/ 股 = $250.00 - $10.00 (佣金) = $240.00。<br>李先生的帐户有资本收益，因为： $240.00 (卖出) - $210.00 (成本) = +$30.00。</p>
+</li>
+<li><p>李先生决定以每股 $10.00 的价钱卖出 XYZ 股票 (佣金 = $10.00)。李先生计算这笔交易为：10 x $10.00/ 股 = $100.00 - $10.00 (佣金) = $90.00。<br>李先生的帐户出现资本亏损，因为： $90.00 (卖出) - $210.00 (成本) = -$120.00。</p>
+</li>
+</ul>
+<h2>持有时间</h2>
+<p>股票持有时间不同，资本增涨的税率也会不一样。只要股票持有时间超出一年，赚的钱算为长期资本收益，只需缴 15% 的所得税。若未满一年则必须缴一般所得税率。</p>
+<p>若您细心注意持有时间，可以减轻不少税的负担。举例来说，若您考虑卖出一支已经持有十一个月的股票，不彷再等一个月，所赚的钱即可以长期资本收益计算。只要最后这一个月内该股票价钱没有大幅下跌，您则会因为税率较低而赚取较多税后收入。同样的，您应尽量避免长期资本亏损，因为您不希望抵消有税利的长期资本收益。</p>
+<p>假设您的一般所得税率是 30%，您有 $3,000 未实现短期资本收益，以及 $3,000 的未实现长期资本收益。您有一支股票卖出后赔了 $2,000。</p>
+<p>若您赔钱卖出持有短期的股票，您的短期资本收益其中 $2,000 会抵消。剩余的 $1,000 则以 30% 税率计算所得税，因此您需要缴 $300 (短期) + $450 (长期) = $750 应缴所得税。<br>若您赔钱卖出持有长期的股票，您的长期资本收益其中 $2,000 会抵消。剩余的 $1,000 则以 15% 税率计算所得税，因此您需要缴 $150 (长期) + $900 (短期) = $1050 应缴所得税。<br>短期收益税率较高，因此短期亏损可以降低您要缴的税金。长期收益税率较低，所以虽然长期亏损可以抵税，效果没有那么显著。<br>若您收到股票股息，规则相同。唯一要注意的就是若股息为应缴税，持有日由发放股息当天开始计算。若股息为免税股息，持有日则由买进原股票当日起算。</p>
+<p>注意：虽然十二月三十一日交易隔年才会完成交割手续，报税时这笔交易仍然视为今年所完成的交易。</p>
+<p>卖空交易的规定不同。交割日必须在年底，完成全部交隔手续，方可算为该年的交易。所有损益以交割日 (非交易日) 计算。</p>
+<h2>Tax Lots</h2>
+<p>每一笔交易所买进的股票统计为一个“lot”。若您以不同的价钱分三次每次 100 股买进 IBM 股票，虽然您的帐户显示 300 股 IBM，每 100 股却方别算为一个“lot”。当您卖出证券时，卖出不同的 lot 可以使您已实现益损有之不同，降低税金。(若您卖出时不指定怎么计算 lot，国税局自动使用 FIFO (First In, First Out 先进先出)，也就是说您先买的股票会先卖出。)</p>
+<p>请看下面例子： 您於一月买进 100 股 FZ Steel Co.，每股 $5。三个月后您又买进了 100 股，每股 $7。股票目前价格为 $10/ 股。</p>
+<p>买进交易 1: $5 x 100 = $500 买进交易 2: $7 x 100 = $700 总价 = $1,200<br>$10 x 200 = 2,000   今天股票值 = $2,000<br>    总未实现利益 $800<br>若您决定以买股 $10 的价钱卖出 150 股 FZ Steel Co.，要怎么计算您的买价呢？您所卖出的 150 股可能是之前 200 个的各种组合。让我们计算一下您买进这 150 股花了多少钱：</p>
+<p>若您将 100 股选自於 $5lot，另外 50 股选於 $7 lot (FIFO)：<br>(100 股 X $5) + (50 股 X $7) = $500 + $350 = $850 成本<br>(150 股 X $10) - $850 = $1,500 - $850 = $650 总收益<br>用 FIFO 方式计算，您实现了 $650 的收益 (不包含佣金及其他费用)。</p>
+<p>让我门来试试另一种算法，这次从两个 lot 中各取 75 股：<br>(75 股 X $5) + (75 股 X $7) = $375 + $525 = $900<br>(150 股 X $10) - $900 = $1,500 - $900 = $600<br>用这总算法，您实现了 $600 的收益 (不包含佣金及其他费用)。第二种算法可以让您少 $50 的所得税责任。</p>
+<p>注意： 以上计算方式并不会影响您未实现收益的金额，只会影响您需要缴的税金。<br>每笔交易都有不同的特性，但怎么搭配买卖交易可以改变您需要付的税金。您只要资料整理完善，用点基本的数学，即可用此建立投资省税的策略。</p>
+<h2>别作弊：冲洗交易 Wash Sale</h2>
+<p>为了预防投资人卖出股票认赔抵税后再度买进同一支股票，特别设立冲洗交易规则。冲洗交易期为卖出日的前后各 30 天，共 61 天 (包含卖出日)。</p>
+<p>若您不慎进行了冲洗交易：<br>亏损金额不可抵税<br>新买进的股票成本需做调整 (加第一笔交易赔损的款项)<br>新买进的股票持有时间计算必须包含之前第一笔交易的股票<br>假设您有 500 股 $40 买进的 Fiko Steel, Co.，您现在希望以每股 $25 卖出抵税。卖出后第 15 您听说 Fiko Steel, Co. 的前景不错，於是用 $30 的价位又买进了 500 股。虽然您第一笔交易每股赔了 $15，这个金额不抵税，因为您在冲洗交易期间再度了买进同一支股票。此外，因为您进行了冲洗交易，新买进的股票成本计算必须加 $15，等於每股 $45。</p>
+<p>冲洗交易规则包含所有“非常类似”的证券。以下几种证券不包含在冲洗交易规则中：<br>同一个机构发行，但有不同到期日、利息的债券<br>同一家公司的普通股及优先股<br>同一个产业，但另一家公司的股票</p>
+<h2>卖空</h2>
+<p>卖空证券报税的基本观念就是平仓前不需缴税。卖空若赔钱，在您将股票送至经纪平仓之前也不能够进行抵税。卖空交易以平仓日那年为税年，且不管持有短仓时间多久，都算为短期持有益损。若您对卖空的详细规则有疑问，请与您的税务顾问联络。</p>
+<h2>特殊税务状况</h2>
+<p>现金替代：公司并购或股票分割时，持有小数股数的帐户不会直接收到对照该股数的股票，而是收到现金配给。报税时您必须将此小数股计算入成本中，卖出时也用它计算收益或亏损。</p>
+<p>股票股息：有些公司会发行更多股票给目前的股东。新的股票报税时必须加入计算成本，且这些新股的持有日期以原股买进日期相同。收到股息的时候不需要报税，但是卖出股票时的收入则须报税。</p>
+<p>现金股息：您必须於 Schedule D 纪录现金股息。现金股息分合格及不合格股息两种，会因股票发行公司或持有股票时间而不同。</p>
+<p>并购现金发放： (ABC 公司宣布将与 XYZ 公司合并，每股 ABC 可得 0.5 股新股加 $1.00 现款) 请务必先取得并购的细节，包含股票兑换比率以及现金发放金额。若您没有被通知此消息，您可以去发行公司网站的投资人服务部门取得资料。您可以用此资料计算新的成本及损益。某些并购的内容非常复杂，建议您与专业税务顾问联络。</p>
+<p>股票分割：股票分割时，您持有证券的价值并不会改变，您只需依照分割比例调整成本即可。举例来说，您以每股 $5.00 的价格买进了 10 股的 ABC(总价 = $50.00)。当 ABC 宣布股票将 2 分一，代表您持有的每一股都将变成两股新股。您将拥有 20 股新股，每股成本 $2.50(总价 = $50.00)。</p>
+<p>股息再投资：有些投资人选择将现金股息直接用来买进更多股份。虽然系统会自动帮您买进，您仍必须於 Schedule D 申报股息金额。卖出您新买的股票时您也必须要计算损益，以便申报所得税。</p>
+<p>共同基金发放收益：以正常收入方式计算税金。</p>
+<p>货币市场共同基金：每股通常固定为 $1.00，卖出时也不需计算损益。投资此类型基金是为了股息收入。</p>
+<p>无价值证券：当一个公司下市或公布破产 (如 Enron、旧的 K-Mart 等等)，它的股票就会失去价值。您会发现这个股票开始没有交易量，同时代号变成一系列数字及字母。公司若经营不嘉，就是会有这个风险。若您不幸持有以下市获破产的公司股票，您可以要求将他由帐户内去除，并将全额亏损用来抵税。您的帐户处里掉这个无价值证券后，帐户明细单会出现一笔“penny for lot”交易。</p>
+<p>* 本页所提供的资料非法律或税务的建议。若您需要关於个人的相关建议，请谘询合格的税务顾问或者法律顾问。<br>若您希望得到更多相关资讯，请前往美国国税局网站 www.irs.gov</p>
+]]></content>
+    <category scheme="http://topdna.org/tags/investment/" term="理财"/>
+    <category scheme="http://topdna.org/categories/investment/" term="理财"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[Mac下常用软件推荐]]></title>
     <link href="http://topdna.org/tech/mac-software/"/>
     <id>http://topdna.org/tech/mac-software/</id>
     <published>2013-09-07T13:19:48.000Z</published>
-    <updated>2013-09-07T15:17:47.000Z</updated>
-    <content type="html"><![CDATA[<p>为了让 Mac 下工作更加得心应手， 也为了以后买 mac 的同学用起来方便，推荐一些我个人认为比较好的常用软件，权作抛砖引玉，欢迎大家不吝推荐补充，发掘出更多好的宝贝 (本文所提到的绝大部分软件都可以在 macx 上下载)：</p>
+    <updated>2013-12-19T01:26:47.000Z</updated>
+    <content type="html"><![CDATA[<p>为了让 Mac 下工作更加得心应手， 也为了以后买 mac 的同学用起来方便，推荐一些我个人认为比较好的常用软件，权作抛砖引玉，欢迎大家不吝推荐补充，发掘出更多好的宝贝：</p>
 <h1>1. Homebrew</h1>
 <p>url：<a href="http://brew.sh/" target="_blank">http://brew.sh/</a><br>这个要重点推荐，懒人必备。Mac OS X 包管理工具. 类似于 ubuntu 下的 apt-get install 可以用来取代 mac ports，号称是最简单最灵活的安装 gnu 开源软件的管理器。安装起来也很简单，安装后直接通过类似：$ brew install wget 这样的命令就可以安装 wget 或者其他开源工具了。</p>
 <h1>2. Path Finder</h1>
@@ -43,7 +154,7 @@
 <center><img src="/resource/img/macsoft/08easyfind.png" alt="EasyFind"></center>
 
 <h1>9. DMGConverter</h1>
-<p>这个软件在特殊的场景下很有用： 来自 macx.cn 的 DB 软件通常 mount DMG 文件的时候需要输入密码，然后下次 mount 的时候还要再输⋯⋯，如果用系统自带的磁盘工具清除密码的话也挺麻烦的，有了这个软件就很方便了，可以将要解密的 dmg 文件批量拖到该应用的面板上，然后输入密码，软件就会自动把密码清除，另存为一个新的 dmg 文件，同时删掉源文件。遗憾的是每个软件都要输一次密码，不能设置默认密码。</p>
+<p>这个软件在特殊的场景下很有用： 某些 DMG 文件 mount 的时候需要输入密码，然后下次 mount 的时候还要再输⋯⋯，如果用系统自带的磁盘工具清除密码的话也挺麻烦的，有了这个软件就很方便了，可以将要解密的 dmg 文件批量拖到该应用的面板上，然后输入密码，软件就会自动把密码清除，另存为一个新的 dmg 文件，同时删掉源文件。遗憾的是每个软件都要输一次密码，不能设置默认密码，而且这个软件貌似已经很久没有更新了。</p>
 <h1>10. Adobe Creative Suite 5.5 Master Collection、Pixelmator</h1>
 <p>这个就不用太多解释了，用得最多的是 Photoshop 和 fireworks。另外 Pixelmator 也是一个很不错的轻量级的 ps 替代软件，界面很漂亮。</p>
 <h1>11. ColorSchemer Studio 2</h1>
@@ -57,7 +168,7 @@
 <h1>13. SuperFlexibleSynchronizer</h1>
 <p>如同它的名字那样，一个超级强大而且灵活的文件同步工具，可以设置定时任务定期将你的数据备份到指定地方。</p>
 <h1>14. Viewer</h1>
-<p>mac 自带的预览工具不能自动播放同一个目录下的所有图片，用起来不太方便，可以用这个替换，支持翻页、自动播放、全屏、系统开销很小，速度快。</p>
+<p>mac 自带的预览工具不能自动播放同一个目录下的所有图片，用起来不太方便，可以用这个替换，支持翻页、自动播放、全屏、系统开销很小，速度快。不过这个软件貌似也有很久没有更新了。</p>
 <h1>15. Virtualbox &amp; VMware</h1>
 <p>两个很有名的虚拟机，前者开源、免费，后者还支持启动 bootcamp 分区的 windows 系统，这样不用重新建一个虚拟机了。为了测试网页在各个版本 IE 浏览器下的兼容性，虚拟机还是必不可少的。感觉 virtualbox 似乎要快些。</p>
 <h1>16. WriteRoom、iA writer</h1>
@@ -94,7 +205,7 @@
 <h1>31. SPlayerX &amp; MplayerX &amp; VLC 2</h1>
 <p>Mac 下的射手播放器，支持字幕外挂、或者自动搜索下载字幕。对于喜欢从网上找盗版电影看的人来说还是很方便的——自动帮你找好字幕。</p>
 <h1>32. 虾米音乐</h1>
-<p>虾米音乐 Mac 客户端还是挺不错的，有免费的音乐挺不是坏事，而且全屏以后还挺漂亮的，推荐大家试试。</p>
+<p>虾米音乐 Mac 客户端还是挺不错的，有免费的音乐听不是坏事，而且全屏以后还挺漂亮的，推荐大家试试。</p>
 <h1>33. Speed download</h1>
 <p>非常有名的下载工具，不过破解版的容易崩溃，是不是破解比较难来着？另外迅雷最新版本也还行，虽然某些人可能不太喜欢。</p>
 <h1>34. Dropbox</h1>
@@ -125,7 +236,7 @@
     <link href="http://topdna.org/investment/reading-list/"/>
     <id>http://topdna.org/investment/reading-list/</id>
     <published>2013-09-03T22:08:10.000Z</published>
-    <updated>2013-09-08T09:36:27.000Z</updated>
+    <updated>2013-12-14T10:38:26.000Z</updated>
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="/resource/style/jquery.handsontable.css" />
 
 <link rel="stylesheet" type="text/css" href="/resource/style/style.css" />
@@ -159,20 +270,20 @@
       {id : 17, name: " 精益创业 "                 , author: " 埃里克•莱斯 "     , readingDate: "About 2013/06", star:5, isRead: 'Y'},
       {id : 18, name: " 中国改革新思维 "            , author: " 李佐军 "         , readingDate: "About 2013/07", star:4, isRead: 'Y'},
       {id : 19, name: " 大空头 "                   , author: " 刘易斯 "          , readingDate: "2013/09/06~09/09", star:4, isRead: 'Y'},
-      {id : 20, name: " 资本之王 "                 , author: " 戴维•凯里等著 "    , readingDate: "2013/09/08~?", star:0, isRead: 'I'},
-      {id : 21, name: " 传习录 "                  , author: "[明] 王阳明 "     , readingDate: "About 2013/08", star:5, isRead: 'I'},
+      {id : 20, name: " 资本之王 "                 , author: " 戴维•凯里等著 "    , readingDate: "2013/09/08~?", star:0, isRead: 'N'},
+      {id : 21, name: " 传习录 "                  , author: "[明] 王阳明 "     , readingDate: "About 2013/08", star:5, isRead: 'N'},
       {id : 22, name: " 经济学的思维方式 "          , author: " 保罗•海恩等 "      , readingDate: "", star:0, isRead: 'N'},
       {id : 23, name: " 大而不倒 "                 , author: " 安德鲁•罗斯•索尔金 ", readingDate: "", star:0, isRead: 'N'},
       {id : 24, name: " 这次不一样: 八百年金融危机史 " , author: " 莱因哈特等 "       , readingDate: "", star:0, isRead: 'N'}
     ];
 
     var readRender = function (instance, td, row, col, prop, value, cellProperties) {
-      if(value === 'Y') { 
+      if(value === 'Y') {
         $(td).empty().append(' 已读 ').addClass('finished');
       }else if(value === 'I'){
-        $(td).empty().append(' 在读 ').addClass('in-reading'); 
+        $(td).empty().append(' 在读 ').addClass('in-reading');
       }else if(value === 'N'){
-        $(td).empty().append(' 未读 ').addClass('waiting-list'); 
+        $(td).empty().append(' 未读 ').addClass('waiting-list');
       }else{
         Handsontable.TextCell.renderer.apply(this, arguments);
       }
@@ -870,8 +981,8 @@
     <link href="http://topdna.org/misc/art-gallery/"/>
     <id>http://topdna.org/misc/art-gallery/</id>
     <published>2013-08-25T12:46:54.000Z</published>
-    <updated>2013-09-06T08:16:13.000Z</updated>
-    <content type="html"><![CDATA[<h4>美图橱窗，点击可查看大图哈</h4>
+    <updated>2013-12-15T07:30:51.000Z</updated>
+    <content type="html"><![CDATA[<h4>美图橱窗 Demo，点击可查看大图哈</h4>
 <div class="clearfix"><br>    <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_01.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_02.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_03.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_04.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_05.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_06.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_07.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_08.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_09.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_10.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_11.jpg" alt="" /> <img width="60" height="100" class="alignleft imgbox" src="/resource/img/art/art_12.jpg" alt="" /><br></div>]]></content>
     <category scheme="http://topdna.org/tags/misc/" term="其他"/>
     <category scheme="http://topdna.org/categories/misc/" term="其他"/>
@@ -3386,6 +3497,20 @@ project.setState = <span class="keyword">function</span>(state) {
     <category scheme="http://topdna.org/categories/essay/" term="随感"/>
   </entry>
   <entry>
+    <title type="html"><![CDATA[无聊一作]]></title>
+    <link href="http://topdna.org/essay/nothing-meaningful/"/>
+    <id>http://topdna.org/essay/nothing-meaningful/</id>
+    <published>2010-12-06T23:30:00.000Z</published>
+    <updated>2013-12-15T07:24:36.000Z</updated>
+    <content type="html"><![CDATA[<center><br>上: 遍寻不着，犹记当年小蛮腰，空余恨，一身五花膘。<br>下: 相思未了，常念当初同言笑，皆是叹，满目悲寂寥。<br></center>
+
+<p><span class="alignright ps">2010@HZ</span></p>
+]]></content>
+    <category scheme="http://topdna.org/tags/life/" term="生活"/>
+    <category scheme="http://topdna.org/tags/essay/" term="随感"/>
+    <category scheme="http://topdna.org/categories/essay/" term="随感"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[如果有爱,愿与偕老——ali艺术节《如果•爱》后记]]></title>
     <link href="http://topdna.org/essay/if-you-love-me/"/>
     <id>http://topdna.org/essay/if-you-love-me/</id>
@@ -3415,6 +3540,33 @@ project.setState = <span class="keyword">function</span>(state) {
 <p>人生不是电脑，<br>        没有系统还原，<br>错过的、失去的都不会再回来……</p>
 <p><span class="alignright ps">2010/10/20 @ 杭州滨江</span></p>
 ]]></content>
+    <category scheme="http://topdna.org/tags/essay/" term="随感"/>
+    <category scheme="http://topdna.org/categories/essay/" term="随感"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[见与不见]]></title>
+    <link href="http://topdna.org/essay/see-you-or-not/"/>
+    <id>http://topdna.org/essay/see-you-or-not/</id>
+    <published>2010-09-05T13:05:35.000Z</published>
+    <updated>2013-12-15T07:20:17.000Z</updated>
+    <content type="html"><![CDATA[<center><br>见你时，你在我眼里，不见你时，你在我心里。<br></center>
+
+<p><span class="alignright ps">@HZ</span></p>
+]]></content>
+    <category scheme="http://topdna.org/tags/essay/" term="随感"/>
+    <category scheme="http://topdna.org/categories/essay/" term="随感"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[秋意浓]]></title>
+    <link href="http://topdna.org/essay/late-autumn/"/>
+    <id>http://topdna.org/essay/late-autumn/</id>
+    <published>2010-08-26T16:25:37.000Z</published>
+    <updated>2013-12-15T07:22:42.000Z</updated>
+    <content type="html"><![CDATA[<center><br>暑尽秋意浓，<br>翘望满目空，<br>西子斜阳里，<br>游客独匆匆。<br></center>
+
+<p><span class="alignright ps">2010/08/27@HZ</span></p>
+]]></content>
+    <category scheme="http://topdna.org/tags/life/" term="生活"/>
     <category scheme="http://topdna.org/tags/essay/" term="随感"/>
     <category scheme="http://topdna.org/categories/essay/" term="随感"/>
   </entry>
@@ -3454,71 +3606,6 @@ project.setState = <span class="keyword">function</span>(state) {
     <content type="html"><![CDATA[<center><br>生平颠沛独一爱，<br>朝中晚来脚底忙，<br>飘飘然然何所以，<br>忘却烦恼忘却伤。<br></center>
 
 <p><span class="alignright ps">2008/12/20@科岛</span></p>
-]]></content>
-    <category scheme="http://topdna.org/tags/life/" term="生活"/>
-    <category scheme="http://topdna.org/tags/essay/" term="随感"/>
-    <category scheme="http://topdna.org/categories/essay/" term="随感"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[你不会懂我如大海般奔涌的思绪]]></title>
-    <link href="http://topdna.org/essay/you-read-me-not/"/>
-    <id>http://topdna.org/essay/you-read-me-not/</id>
-    <published>2008-08-15T13:05:35.000Z</published>
-    <updated>2013-09-21T11:44:57.000Z</updated>
-    <content type="html"><![CDATA[<p>你不会懂我如大海般奔涌的思绪<br>我宁愿做海底一粒小小的珠贝<br>沉寂万年之后被海水卷起<br>躺在二月的沙滩上<br>享受阳光和春风的爱抚<br>倾听情侣的附耳低语<br>抑或追逐着孩童玩耍的足迹</p>
-<p><a id="more"></a><br>若我偶然被远足者拾起<br>躺在安逸的行囊里<br>哦，相信我<br>那并不是我神往之地<br>囊中的世界比不过这自由的呼吸</p>
-<p>我的心属于这大海<br>我就在她怒吼时的眉宇间<br>一如我深眠在她的怀里<br>我曾随海的暗涌漂泊千里<br>见过斑斓的世界和五彩的同伴<br>听过船工低沉而悠长的号角<br>还曾见过一个美丽的姑娘<br>有着忧伤而深邃的眼睛</p>
-<p>现在我还是沉寂在海底吧<br>寂寞并不可爱<br>至少让我清醒 </p>
-<p><span class="alignright ps">2008/08/15@USTC</span></p>
-]]></content>
-    <category scheme="http://topdna.org/tags/essay/" term="随感"/>
-    <category scheme="http://topdna.org/categories/essay/" term="随感"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[我的梦碎了]]></title>
-    <link href="http://topdna.org/essay/broken-dreams/"/>
-    <id>http://topdna.org/essay/broken-dreams/</id>
-    <published>2008-07-31T13:05:19.000Z</published>
-    <updated>2013-09-21T11:44:33.000Z</updated>
-    <content type="html"><![CDATA[<p>我的梦碎了<br>     被你打碎了<br>当你游目四顾<br>     却没有发现我的存在时<br>当你的微笑<br>     不再为我绽放时<br>当我的呼唤不再有回音<br>     而我的热情被你的背影冷却时<br>我就知道——<br>     我的梦——<br>        碎了<br><a id="more"></a></p>
-<p>我送你的茉莉<br>在落日的余晖里<br>     耷拉着脑袋<br>一如你窗外<br>     静立片刻的我<br>     垂首默然离去<br>我曾见你<br>     披着夕阳的五彩金霞归来<br>     并向我招手示意<br>曾见你的嘴角微微扬起<br>     像夏日初绽的茉莉<br>只是那般光景<br>已如晴空的云朵<br>     悠悠飘去</p>
-<p>我的徘徊已是徒然<br>想你的微笑太过甜蜜<br>我是中了你的毒啊<br>不，我不怪你<br>这不？我正欣欣然地淌血呢<br>彼桂子香时我将离去<br>一如这花香四散在风里<br>你且珍重吧<br>我的爱人<br>此别许是无期</p>
-<p><span class="alignright ps">2008/7/31@Science Island</span></p>
-]]></content>
-    <category scheme="http://topdna.org/tags/essay/" term="随感"/>
-    <category scheme="http://topdna.org/categories/essay/" term="随感"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[讽睡迟]]></title>
-    <link href="http://topdna.org/essay/on-stay-up-late/"/>
-    <id>http://topdna.org/essay/on-stay-up-late/</id>
-    <published>2008-06-06T13:05:08.000Z</published>
-    <updated>2013-09-21T11:40:36.000Z</updated>
-    <content type="html"><![CDATA[<center><br>莫道我睡早，<br>实在君睡迟，<br>今明交替处，<br>已非今日时。<br>今日累明朝，<br>明朝复驱驰，<br>尔等卿卿命，<br>需惜年少时。<br><br><a id="more"></a><br>昔年没电脑，<br>作息皆有时，<br>春至勤劳作，<br>累累穰秋实。<br>如今三更至，<br>奄奄睡意迟，<br>流连到五更，<br>无力付指使。<br>长此无眠日，<br>焉能供驱使？<br></center>
-
-
-<p><span class="alignright ps">2008/06/06 @ Science Island</span></p>
-]]></content>
-    <category scheme="http://topdna.org/tags/essay/" term="随感"/>
-    <category scheme="http://topdna.org/categories/essay/" term="随感"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[遭遇 “蜈蚣精”]]></title>
-    <link href="http://topdna.org/essay/hurt-by-centipede/"/>
-    <id>http://topdna.org/essay/hurt-by-centipede/</id>
-    <published>2008-05-19T13:08:05.000Z</published>
-    <updated>2013-09-21T11:48:27.000Z</updated>
-    <content type="html"><![CDATA[<p>据说人要是倒霉起来连喝凉水都会卡牙, 嘿! 我要是倒霉起来连每天必经的玉脚授鞋仪式都显得毛骨悚然──<br><a id="more"></a><br>且说今天早晨本人懒洋洋地从床上跳下来，睡眼惺忪、哈欠连天，然后磨磨蹭蹭、晃晃悠悠地给左脚穿上袜子，然后再给左脚穿上鞋子，然后再给右脚穿上袜子，然后再给右脚穿上鞋子──这个流程相信大家都重复过无数遍，有什么不对么？──突然──一声尖叫从 我心深处传来，由于我是个男人所以声音就被我忍着卡在喉咙里了：我的右脚先是感觉被苍耳子扎了一下似的，继而仿佛有根针扎入，越刺越深，越来越疼，疼得眼冒金星，疼得每根神经都在跳，仿佛要跳出来似的，疼得我直跺左脚。可是我看了下右脚，好像完好无损，用手按了下右脚拇趾，那种感觉好像有个千斤的锥子从半空落下来直接扎进去一样。</p>
-<p>我开始怀疑自己是不是被施了什么魔咒。我把鞋拿起来一看──这下虽然我是个男人我还是叫了起来 ──我“啊！”了一声把鞋子丢在地上。还好当时寝室只有我一个人，要不然肯定有一大堆人跑过来问是怎么回事，不过让我告诉你是怎么回事吧──鞋子里面有一 只巨型蜈蚣，那家伙守株待兔趴在我的鞋子里面正等着我的脚往它口里喂呢 。我鼓起勇气把鞋子提起来在地面上磕了几下，可它还是赖着不走，于是我加大了力气，提高了频率，它终于被我从鞋子里面摔出来了。那厮见情况不妙试图逃跑， 不过我正在气头上岂能放它？我拎起鞋子就砸，只砸了两下而已……。</p>
-<p>那家伙个头真大 ，有我小拇指这么粗，而且前面两副不知是触角还是牙齿或者钳子之类的东西几乎跟新生的月芽那么大，起码有一百多个脚 。说到这里我想起了一个笑话：有只小蚂蚁碰到一只小蜈蚣，它看到蜈蚣长了那么多脚就很担心地问“蜈蚣哥哥，你长了那么多脚怎么走路啊？你走路的时候先迈哪 只脚呢？”，蜈蚣被它这么一问倒愣住了，它试了试感觉不管先迈哪只脚都不对，结果就不会走路了。扯远了 ，哈哈，打住，打住 。再后来我找了个玻璃瓶把它装了进去连同我的一瘸一拐到右脚一起拿到医院找医生啦。</p>
-<p>我把瓶子往医生的桌子上一放，你猜怎么着？那个模样像个小护士的小医生不仅叫了起来而且跳得老 高，几乎要够着天花板了，她倒是把我给吓得不轻。还好我的心脏没被蜈蚣咬到。事实上我之前已经跟她说过我的脚被蜈蚣咬了，而且还跟她说过我把蜈蚣逮住放进 瓶子里带来了，可是那个恐怖的家伙不懂得“怜香惜玉”还是把医生吓了一跳（想起来一句经典的台词“长得丑不是错，跑出来吓人就不对了”哈哈）。</p>
-<p>医生给我开了些涂敷的氨水和一盒季德胜蛇药片，就把我给打发了。</p>
-<p>可是我的心还咯磣着呐。我闭上眼睛就会想到那个长着成千上万条腿的蜈蚣精，我会想到它在我早起的 每一个清晨待在我的鞋子里面恭候着我在外奔波的双脚的归来；想到鞋子里面随时都回冒出个蜈蚣来，然后在我鲜嫩的小脚上“亲”上一口；想到当我穿着拖鞋坐在 书桌旁边的时候会有个长着一百只脚的家伙千里迢迢不辞劳苦地跑来慰问我的双脚，或者帮我捉蚊子……说不定它老人家下次不仅亲自出马还会带着妻儿老小，带着 蚂蚁、蜥蜴、蟑螂、小蛇、蜘蛛、蝎子之类的“蛛朋蛇友”来，那可就不妙了。</p>
-<p>子曰：“身体发肤，受之父母，不敢毁伤，孝至始也”，今朝被蜈蚣精咬了一口，一怒之下失手要了它的性命，罪过！罪过！</p>
-<p>不知道以后穿鞋子的时候是不是要先检查一下里面是否藏着“活物”了，毕竟踩伤了小蚂蚁之类的小家伙可就太不仁慈了。</p>
-<p>BTW：今天去实验室等电梯的时候，在电梯门打开的一刹那，我以为里面会跳出来一条张着大口吐着信子的巨蟒……</p>
-<p>哇哈哈，六一儿童节要到了，还是不说了，吓着小朋友们可就不好了。</p>
-<p><span class="alignright ps">2008/05/19 @Science Island</span></p>
 ]]></content>
     <category scheme="http://topdna.org/tags/life/" term="生活"/>
     <category scheme="http://topdna.org/tags/essay/" term="随感"/>

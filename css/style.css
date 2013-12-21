@@ -110,7 +110,7 @@
 .page-list .extend {
   margin: 0 7px 0 0;
   padding: 5px 10px;
-  background-color: #d1d1d1;
+  background-color: #fff;
 }
 .page-list .current {
   color: #333;
@@ -121,9 +121,9 @@
   padding: 0;
 }
 body {
-  background: #eee;
-  color: #444;
-  font-family: "Tahoma", "Microsoft YaHei", Arial, sans-serif;
+  background: #fff;
+  color: #3a4145;
+  font-family: 'Droid Serif', serif, "Tahoma", "Microsoft YaHei", Arial, sans-serif;
   font-size: 14px;
   text-shadow: 0 0 1px transparent;
 }
@@ -246,8 +246,6 @@ a:hover {
   margin-left: 30px;
 }
 article {
-  -webkit-box-shadow: 1px 2px 3px #ddd;
-  box-shadow: 1px 2px 3px #ddd;
   background: #fff;
 }
 article.page {
@@ -378,7 +376,7 @@ article header .title {
   font-weight: normal;
 }
 article header .title a {
-  color: #444;
+  color: #3a4145;
 }
 article header .title a:hover {
   color: #258fb8;
@@ -668,8 +666,6 @@ article footer .addthis iframe {
 }
 #sidebar .widget {
   background: #fff;
-  -webkit-box-shadow: 1px 2px 3px #ddd;
-  box-shadow: 1px 2px 3px #ddd;
   margin-bottom: 30px;
   word-wrap: break-word;
 }
@@ -730,7 +726,7 @@ article footer .addthis iframe {
   line-height: 22px;
 }
 #sidebar .search input:focus {
-  color: #444;
+  color: #3a4145;
   border: 1px solid #77b9ff;
 }
 #sidebar .icon-search {
@@ -950,4 +946,15 @@ pre .vhdl .attribute {
 }
 pre .xml .attribute {
   color: #f00;
+}
+.trace-invest {
+  padding: 10px 10px;
+  margin: 0 10px;
+  background-color: #9e457a;
+}
+.trace-invest span a {
+  color: #fff;
+}
+.trace-invest span a:hover {
+  text-decoration: none;
 }
