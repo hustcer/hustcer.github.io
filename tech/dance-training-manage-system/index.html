@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Dance Training Manage System Based on Mongodb and Node | 水刃</title>
+  <title>Dance Training Manage System Based on Mongo Db and Node | 水刃</title>
   <meta name="author" content="hustcer">
   
-  <meta name="description" content="This's a dance training manage system based on NodeJS、Express Web Framework、Jade、MongoDB、MongoSkin and Nodemailer, etc.The web application is built for dancers of Alibaba">
+  <meta name="description" content="This&#39;s a dance training manage system based on NodeJS、Express Web Framework、Jade、MongoDB、MongoSkin and Nodemailer, etc.The web application is built for dancers of Alibaba">
   
   <meta name="keywords" content="topdna,水刃,dance,latin,nodejs,mongodb,nodemailer,mongoskin,jade,express">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Dance Training Manage System Based on Mongodb and Node"/>
+  <meta property="og:title" content="Dance Training Manage System Based on Mongo Db and Node"/>
   <meta property="og:site_name" content="水刃"/>
 
   
@@ -70,6 +70,18 @@
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
   <div class="post-content">
     <header>
       
@@ -78,24 +90,24 @@
       
       
   
-    <h1 class="title">Dance Training Manage System Based on Mongodb and Node</h1>
+    <h1 class="title">Dance Training Manage System Based on Mongo Db and Node</h1>
   
 
     </header>
     <div class="entry">
       
         <ul>
-<li><h1><a href="https://github.com/hustcer/latinode" target="_blank">Fork me on GitHub</a></h1>
+<li><h1 id="-fork-me-on-github-https-github-com-hustcer-latinode-"><a href="https://github.com/hustcer/latinode" target="_blank">Fork me on GitHub</a></h1>
 </li>
-<li><h1><a href="/resource/doc/system-design-and-develop-doc.pdf">Design and Develop Doc(.pdf)</a></h1>
+<li><h1 id="-design-and-develop-doc-pdf-resource-doc-system-design-and-develop-doc-pdf-"><a href="/resource/doc/system-design-and-develop-doc.pdf">Design and Develop Doc(.pdf)</a></h1>
 </li>
 </ul>
-<h2>Summary：</h2>
+<h2 id="summary-">Summary：</h2>
 <p>This&#39;s a dance training manage system based on <strong>NodeJS、Express Web Framework、Jade、MongoDB、MongoSkin and Nodemailer, etc.</strong>.The web application is built for dancers of Alibaba and the goal is mainly focused on dance course signing up management.</p>
 <p><a id="more"></a></p>
-<h2>Features</h2>
+<h2 id="features">Features</h2>
 <p>System consists of dancer forground and admin background. When started in production mode dancers can visit the basic forground pages without login. And if started in development mode the application will give you the admin&#39;s rights. Detailed as follows:</p>
-<h3>Dancer Forground：</h3>
+<h3 id="dancer-forground-">Dancer Forground：</h3>
 <ul>
 <li><strong>Online Course Signing Up:</strong><br/><ul>
 <li>The sign up page will show you the realtime infomation of current courses, such as dance type, course capacity, total applied dancers, total approved dancers, and some other notice.<br/></li>
@@ -112,17 +124,17 @@
 <li>Generate the mailing list of dancers which satisfy certain condition.<br/></li>
 <li>Get a mail notification for those who have applied successfully or quit successfully.</li>
 </ul>
-<h3>Admin Background:</h3>
+<h3 id="admin-background-">Admin Background:</h3>
 <ul>
 <li><p><strong>Course Life Cycle Management:</strong><br/></p>
 <ul>
-<li>Newly applied course status—————————————-(waiting)；<br/></li>
-<li>Dancer cancelled course status——————————(cancelled)；<br/></li>
-<li>Admin refused course status—————————————-(refused)；<br/></li>
-<li>Admin approved course status———————————(approved)；<br/></li>
-<li>Quit applied after approving———————————-(quitApplied)；<br/></li>
-<li>Quit refused by admin———————————————(approved)；<br/></li>
-<li><p>Quit approved by admin———————————————————(quit)；</p>
+<li>Newly applied course status---------------------------(waiting)；<br/></li>
+<li>Dancer cancelled course status--------------------(cancelled)；<br/></li>
+<li>Admin refused course status---------------------------(refused)；<br/></li>
+<li>Admin approved course status----------------------(approved)；<br/></li>
+<li>Quit applied after approving-----------------------(quitApplied)；<br/></li>
+<li>Quit refused by admin------------------------------(approved)；<br/></li>
+<li><p>Quit approved by admin--------------------------------------(quit)；</p>
 <p>Notice:<em>The life cycle status changing of courses should satisfy their pre-conditions, for example: Waiting courses can&#39;t change to Quit directly, but to cancelled is ok. And only the Waiting or QuitApplied courses could be changed to Approved, but approved ones can not change to waiting directly, only the quitApplied course could be changed to quit after refunding, and so on.</em></p>
 </li>
 </ul>
@@ -138,7 +150,7 @@
 </ul>
 </li>
 </ul>
-<h2>Deploy Instruction：</h2>
+<h2 id="deploy-instruction-">Deploy Instruction：</h2>
 <ol>
 <li>Install NodeJs;</li>
 <li>Install MongoDB and start the service;</li>
@@ -147,12 +159,12 @@
 <li>That&#39;s All! Visit <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> in your browser, You will have it!<br/><br/></li>
 </ol>
 <hr>
-<h1>基于 MongoDB 和 NodeJS 的舞蹈培训管理系统</h1>
-<h2>摘要：</h2>
+<h1 id="-mongodb-nodejs-">基于 MongoDB 和 NodeJS 的舞蹈培训管理系统</h1>
+<h2 id="-">摘要：</h2>
 <p>本应用为基于<strong>NodeJS、Express Web Framework、Jade、MongoDB、MongoSkin、Nodemailer</strong>等技术构建的 Alibaba 舞蹈培训管理系统。目前以舞蹈培训报名管理功能为主。</p>
-<h2>功能描述</h2>
+<h2 id="-">功能描述</h2>
 <p>本应用分前台、后台两部分：前台以 production 模式启动，用户免登陆访问；后台以 development 模式启动，兼有会员管理功能。具体描述如下：</p>
-<h3>用户前台功能：</h3>
+<h3 id="-">用户前台功能：</h3>
 <ul>
 <li><strong>实现网上报名：</strong><br/><ul>
 <li>报名页显示当前开设课程实时信息（舞种、额定人数，已申请人数、报名成功人数等）。<br/></li>
@@ -169,17 +181,18 @@
 <li>可以生成满足特定条件的会员的邮件列表。</li>
 <li>用户报名审核通过或者退课审核通过会收到邮件通知。</li>
 </ul>
-<h3>后台功能：</h3>
+<h3 id="-">后台功能：</h3>
 <ul>
 <li><p><strong>课程生命周期管理：</strong><br/></p>
 <ul>
-<li>新申请报名课程状态为待审核————————————————(waiting)；<br/></li>
-<li>管理员审核前用户可以自助取消————————————-(cancelled)；<br/></li>
-<li>管理员可以审核拒绝—————————————————————-(refused)；<br/></li>
-<li>或者审核通过则报名成功—————————————————(approved)；<br/></li>
-<li>报名成功后会员可以申请退课—————————————(quitApplied)；<br/></li>
-<li>退课需要管理员审核，审核拒绝则回到报名成功——-(approved)；<br/></li>
-<li>退课审核通过则处于退课成功——————————————————-(quit)；<br/><br><strong>注意：</strong>对于课程生命状态转换系统会验证是否满足前置条件：比如 waiting 状态不能直接转为 quit，但是可以转换为 cancelled，只有 waiting 或者 quiteApplied 状态的可以转换为 approved, 而 approved 不能转为 waiting，只有 quitApplied 的课程可以转为 quit，并且需要先退费等。</li>
+<li>新申请报名课程状态为待审核 --------------------------------(waiting)；<br/></li>
+<li>管理员审核前用户可以自助取消 -------------------------(cancelled)；<br/></li>
+<li>管理员可以审核拒绝 -------------------------------------------(refused)；<br/></li>
+<li>或者审核通过则报名成功 ----------------------------------(approved)；<br/></li>
+<li>报名成功后会员可以申请退课 --------------------------(quitApplied)；<br/></li>
+<li>退课需要管理员审核，审核拒绝则回到报名成功 -----(approved)；<br/></li>
+<li>退课审核通过则处于退课成功 -------------------------------------(quit)；<br/>
+<strong>注意：</strong>对于课程生命状态转换系统会验证是否满足前置条件：比如 waiting 状态不能直接转为 quit，但是可以转换为 cancelled，只有 waiting 或者 quiteApplied 状态的可以转换为 approved, 而 approved 不能转为 waiting，只有 quitApplied 的课程可以转为 quit，并且需要先退费等。</li>
 </ul>
 </li>
 <li><p><strong>课程缴费状态设置：</strong><br/></p>
@@ -190,17 +203,19 @@
 </li>
 <li><p><strong>管理员修改会员信息：</strong><br/></p>
 <ul>
-<li>会员可以修改自身基本信息，管理员可以修改其基本及高级属性比如：<br>level(&lt;=9)、vip 等级 (&lt;=5)、forever 状态（年卡）、lock 状态等。</li>
+<li>会员可以修改自身基本信息，管理员可以修改其基本及高级属性比如：
+level(&lt;=9)、vip 等级 (&lt;=5)、forever 状态（年卡）、lock 状态等。</li>
 </ul>
 </li>
 </ul>
-<h2>应用部署说明：</h2>
+<h2 id="-">应用部署说明：</h2>
 <ol>
 <li>安装 NodeJs；</li>
 <li>安装 MongoDB 并启动；</li>
 <li>Clone 代码：git clone <a href="https://github.com/hustcer/latinode.git" target="_blank">https://github.com/hustcer/latinode.git</a>;</li>
 <li>cd latinode &amp; npm install -d &amp; node app.js;</li>
-<li>That&#39;s All! 访问：<a href="http://localhost:3000" target="_blank">http://localhost:3000</a> 即可。<br><br/></li>
+<li>That&#39;s All! 访问：<a href="http://localhost:3000" target="_blank">http://localhost:3000</a> 即可。
+<br/></li>
 </ol>
 
       
@@ -315,9 +330,16 @@
   
     <li><a href="/tags/reading/">读书</a><small>2</small></li>
   
-    <li><a href="/tags/essay/">随感</a><small>26</small></li>
+    <li><a href="/tags/essay/">随感</a><small>27</small></li>
   
   </ul>
+</div>
+
+
+  <div class="trace-invest">
+    <span>
+        <a href="http://traceinvest.com" target="_blank">欢迎光临我的美股投资相关网站 :</br>traceinvest.com</a>
+    </span>
 </div>
 
 
@@ -325,6 +347,10 @@
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/essay/blankness/">空白</a>
+      </li>
     
       <li>
         <a href="/investment/capital-gains-tax/">关于美国资本利得税</a>
@@ -339,7 +365,7 @@
       </li>
     
       <li>
-        <a href="/tech/kindwill-domain-for-sale/">Domain for Sale——kindwill.com</a>
+        <a href="/tech/kindwill-domain-for-sale/">Domain for Sale——Kindwill.Com</a>
       </li>
     
       <li>
@@ -351,7 +377,7 @@
       </li>
     
       <li>
-        <a href="/tech/js-style/">Javascript 编码规范</a>
+        <a href="/tech/js-style/">Java Script 编码规范</a>
       </li>
     
       <li>
@@ -363,25 +389,14 @@
       </li>
     
       <li>
-        <a href="/tech/dance-training-manage-system/">Dance Training Manage System Based on Mongodb and Node</a>
+        <a href="/tech/dance-training-manage-system/">Dance Training Manage System Based on Mongo Db and Node</a>
       </li>
     
       <li>
         <a href="/life/the-beauty-of-county/">歙县之美</a>
       </li>
     
-      <li>
-        <a href="/essay/two-horses/">古有两驹</a>
-      </li>
-    
   </ul>
-</div>
-
-
-  <div class="trace-invest">
-    <span>
-        <a href="http://traceinvest.com" target="_blank">欢迎光临我的美股投资相关网站 :</br>traceinvest.com</a>
-    </span>
 </div>
 
 </aside>
@@ -390,7 +405,7 @@
   <div id="go-pg-top"><i class="icon-arrow-up"></i></div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2013 hustcer
+  &copy; 2014 hustcer
   
 </div>
 <div class="clearfix"></div></footer>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Javascript 编码规范 | 水刃</title>
+  <title>Java Script 编码规范 | 水刃</title>
   <meta name="author" content="hustcer">
   
   <meta name="description" content="javascript 前端开发规范">
@@ -11,7 +11,7 @@
   <meta name="keywords" content="topdna,水刃,javascript,前端规范,前端代码风格,编码风格">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Javascript 编码规范"/>
+  <meta property="og:title" content="Java Script 编码规范"/>
   <meta property="og:site_name" content="水刃"/>
 
   
@@ -70,6 +70,18 @@
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
   <div class="post-content">
     <header>
       
@@ -78,26 +90,26 @@
       
       
   
-    <h1 class="title">Javascript 编码规范</h1>
+    <h1 class="title">Java Script 编码规范</h1>
   
 
     </header>
     <div class="entry">
       
-        <h4>以下文档大多来自:</h4>
+        <h4 id="-">以下文档大多来自:</h4>
 <ul>
 <li><a href="http://wyz.67ge.com/google-js/javascriptguide.xml" target="_blank">Google JavaScript 编码规范指南</a></li>
 <li><a href="https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN" target="_blank">Idiomatic 风格</a></li>
 </ul>
-<h4>参考规范</h4>
+<h4 id="-">参考规范</h4>
 <ul>
 <li><a href="http://es5.github.com/" target="_blank">ECMAScript 5.1 注解版</a></li>
 <li><a href="http://ecma-international.org/ecma-262/5.1/" target="_blank">EcmaScript 语言规范, 5.1 版</a></li>
 </ul>
-<h4>基本原则: 无论有多少人在维护，所有在代码仓库中的代码理应看起来像同一个人写的。</h4>
-<h2>前言</h2>
+<h4 id="-">基本原则: 无论有多少人在维护，所有在代码仓库中的代码理应看起来像同一个人写的。</h4>
+<h2 id="-">前言</h2>
 <p>下面的章节描述的是一个 <em>合理</em> 的现代 JavaScript 开发风格指南，并非硬性规定。其想送出的核心理念是<em>高度统一的代码风格</em>（the law of code style consistency）。你为项目所择风格都应为最高准则。作为一个描述放置于你的项目中，并链接到这个文档作为代码风格一致性、可读性和可维护性的保证。</p>
-<h2>规范概要</h2>
+<h2 id="-">规范概要</h2>
 <ol>
 <li>JS/CSS 文件编码统一采用 UTF8 编码</li>
 <li>代码缩进使用 4 个空格缩进替代 tab 缩进</li>
@@ -107,20 +119,20 @@
 <li>JS 里声明变量必须加上 var 关键字，推荐一个 var 同时声明多个变量，或者一组有逻辑关系的变量，避免一个变量一个 var.</li>
 <li>使用 Array 和 Object 语法直接声明并将其初始化, 更易读且性能更好, 而不使用 Array 和 Object 构造器.</li>
 <li>JS 里使用单引号 (&#39;) 优于双引号 (&quot;).</li>
-<li>JS 代码结尾统一约定加‘;’</li>
+<li>JS 代码结尾统一约定加 &#39;;&#39;</li>
 <li>没有特殊原因避免使用 with/eval</li>
-<li>对于 if/else 等后面的语句即使只有一行代码也需要在该行代码的首尾加上‘{}’.</li>
-<li>字符串拼接在少量 (次数为个位数) 的情况下可以使用‘+’, 大量的时候使用数组 join(), 或者尽可能采用模板引擎渲染：比如 jsRender 等, 如果是 Extjs 可以采用 XTemplate.</li>
+<li>对于 if/else 等后面的语句即使只有一行代码也需要在该行代码的首尾加上 &#39;{}&#39;.</li>
+<li>字符串拼接在少量 (次数为个位数) 的情况下可以使用 &#39;+&#39;, 大量的时候使用数组 join(), 或者尽可能采用模板引擎渲染：比如 jsRender 等, 如果是 Extjs 可以采用 XTemplate.</li>
 <li>对于数组赋值操作快于 push() 操作, 所以尽量使用赋值操作.</li>
 <li>for 循环遍历：for(var i = 0, l = arr.length; i &lt; l; i++){// doSomething here } 采用这种方式而不是 i &lt; arr.length, 前一种方式只会计算一次 arr 的长度，而后一种方式会计算数组长度 arr.length + 1 次，效率比较低</li>
 <li>字符串转换为整数，推荐使用 parseInt(num, 10) 这种方式，+num 写法简单，在操作次数极少的情况下也可以酌情使用。</li>
-<li>变量比较的时候总是判断最好、最精确的值，推荐使用‘===’少用‘==’(可以参考<a href="https://github.com/jquery/jquery/blob/master/src/core.js" target="_blank">jQuery</a>代码里面, 可以看到只有在‘== null’的时候才可能使用‘==’，其他情况一律使用的是‘===’).</li>
+<li>变量比较的时候总是判断最好、最精确的值，推荐使用 &#39;===&#39; 少用 &#39;==&#39;(可以参考<a href="https://github.com/jquery/jquery/blob/master/src/core.js" target="_blank">jQuery</a>代码里面, 可以看到只有在 &#39;== null&#39; 的时候才可能使用 &#39;==&#39;，其他情况一律使用的是 &#39;===&#39;).</li>
 <li>JS 里变量命名规范使用 functionNamesLikeThis, variableNamesLikeThis, ClassNamesLikeThis, EnumNamesLikeThis, methodNamesLikeThis, 和 SYMBOLIC_CONSTANTS_LIKE_THIS, 尤其不要跟 python 里面的变量命名方式混淆了.</li>
-<li>JS 文件名应该使用小写字符, 以避免在有些系统平台上不识别大小写的命名方式. 文件名以.js 结尾, 不要包含除 ‘-’ 和 &#39;<em>‘ 外的标点符号 (使用 ’-‘ 优于 ’</em>&#39;), 我们约定统一使用 js-file-name.js 这种类型，对于 template 文件命名方式为 template_name.html 形式.</li>
-<li>所有的 html DOM 里面的 id, Extjs 配置项里面的 id 以及所有样式里面的 class 命名使用中划线，如‘id-name’/‘class-name’.</li>
+<li>JS 文件名应该使用小写字符, 以避免在有些系统平台上不识别大小写的命名方式. 文件名以.js 结尾, 不要包含除 &#39;-&#39; 和 &#39;<em>&#39; 外的标点符号 (使用 &#39;-&#39; 优于 &#39;</em>&#39;), 我们约定统一使用 js-file-name.js 这种类型，对于 template 文件命名方式为 template_name.html 形式.</li>
+<li>所有的 html DOM 里面的 id, Extjs 配置项里面的 id 以及所有样式里面的 class 命名使用中划线，如 &#39;id-name&#39;/&#39;class-name&#39;.</li>
 <li>公共的 js 第三方类库放在 static/js/common/lib 下，jQuery 相关类库放在 static/js/common/lib/jQplugin 下，我们自己开发的公共类库放在 static/js/common 下</li>
 <li>鉴于有很多代码是复制粘贴过来的，所以大家要保证自己的代码风格良好且易于阅读，不然别人拷过去后不好的风格就蔓延开了，而且会导致其他人效仿。</li>
-<li>对于复制粘贴然后做相应修改以实现功能的代码，请务必清理干净，不要有‘忘了删除的不影响逻辑的代码’，同时记得将变量名改成适合当前业务场景的有意义的变量名, 不要因为不影响逻辑就保留原来的不适合当前场景的名字</li>
+<li>对于复制粘贴然后做相应修改以实现功能的代码，请务必清理干净，不要有 &#39; 忘了删除的不影响逻辑的代码 &#39;，同时记得将变量名改成适合当前业务场景的有意义的变量名, 不要因为不影响逻辑就保留原来的不适合当前场景的名字</li>
 <li>对于系统中出现的大段注释的、过时的、废弃的代码务必及时清理干净，谁制造谁清理，否则其他人也不敢清理，越积越多</li>
 <li>不要使用魔法数字，尽量定义一个常量来表示该数字，并加上相应的注释，否则后期可能出现因为数字变化而导致牵一发而动全身，需要到处修改，增加维护成本</li>
 <li>注释尽量采用 jsdoc 的代码注释风格，普通业务代码不做要求，不过通用 js 类库要求尽量详尽以方便其他人阅读使用</li>
@@ -132,9 +144,10 @@
 </ol>
 <a id="more"></a>
 
-<h2>前端资源 Build</h2>
-<p>项目必须总是提供一些通用的方法来检验（can be linted）、测试和压缩源码以为产品阶段使用做准备。对于此类工作 Ben Alman 所写的 <a href="https://github.com/cowboy/grunt" target="_blank">grunt</a> 可谓首屈一指。通过简单的配置即可完成自动对 CSS 进行检查 / 压缩 / 合并，对 JS 进行检查 / 压缩 / 合并，对 html 文件进行压缩，删除创建目录，拷贝文件，压缩打包等，十分方便。<br>参考的 grunt 配置文件:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h2 id="-build">前端资源 Build</h2>
+<p>项目必须总是提供一些通用的方法来检验（can be linted）、测试和压缩源码以为产品阶段使用做准备。对于此类工作 Ben Alman 所写的 <a href="https://github.com/cowboy/grunt" target="_blank">grunt</a> 可谓首屈一指。通过简单的配置即可完成自动对 CSS 进行检查 / 压缩 / 合并，对 JS 进行检查 / 压缩 / 合并，对 html 文件进行压缩，删除创建目录，拷贝文件，压缩打包等，十分方便。
+参考的 grunt 配置文件:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -251,7 +264,7 @@
 </pre></td><td class="code"><pre><span class="comment">/**
  * Grunt file for front end resource check/minify/compress.
  */</span>
-module.exports = <span class="keyword">function</span>(grunt) {
+module.exports = <span class="function"><span class="keyword">function</span><span class="params">(grunt)</span> {</span>
 
   grunt.initConfig({
     pkg: grunt.file.readJSON(<span class="string">'package.json'</span>),
@@ -364,9 +377,9 @@ module.exports = <span class="keyword">function</span>(grunt) {
 };
 </pre></td></tr></table></figure>
 
-<h2>规范详情</h2>
-<h3>JavaScript 编码风格</h3>
-<h4>空白</h4>
+<h2 id="-">规范详情</h2>
+<h3 id="javascript-">JavaScript 编码风格</h3>
+<h4 id="-">空白</h4>
 <ul>
 <li>永远都不要混用空格和 Tab。</li>
 <li>开始一个项目，在写代码之前，选择软缩进（空格）或者 Tab（作为缩进方式），并将其作为<strong>最高准则</strong>。<ul>
@@ -381,10 +394,10 @@ module.exports = <span class="keyword">function</span>(grunt) {
 </ul>
 </li>
 </ul>
-<h4>行末和空行</h4>
+<h4 id="-">行末和空行</h4>
 <p>留白会破坏 diff 并使 diff 结果变得更不可读。考虑包括一个预提交的 hook 自动删除行末和空行中的空格。</p>
-<h4>花括号, 换行</h4>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h4 id="-">花括号, 换行</h4>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -404,50 +417,52 @@ module.exports = <span class="keyword">function</span>(grunt) {
     <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;<span class="number">100</span>;i++) someIterativeFn();
 </pre></td></tr></table></figure>
 
-<h4>命名</h4>
+<h4 id="-">命名</h4>
 <p>通常, 使用 functionNamesLikeThis, variableNamesLikeThis, ClassNamesLikeThis, EnumNamesLikeThis, methodNamesLikeThis, 和 SYMBOLIC_CONSTANTS_LIKE_THIS.</p>
-<h5>属性和方法</h5>
-<p>文件或类中的 私有 属性, 变量和方法名应该以下划线 &quot;_&quot; 开头.<br>保护 属性, 变量和方法名不需要下划线开头, 和公共变量名一样.</p>
-<h5>方法和函数参数</h5>
+<h5 id="-">属性和方法</h5>
+<p>文件或类中的 私有 属性, 变量和方法名应该以下划线 &quot;_&quot; 开头.
+保护 属性, 变量和方法名不需要下划线开头, 和公共变量名一样.</p>
+<h5 id="-">方法和函数参数</h5>
 <p>可选参数以 opt_ 开头.</p>
 <p>函数的参数个数不固定时, 应该添加最后一个参数 var_args 为参数的个数. 你也可以不设置 var_args 而取代使用 arguments.</p>
 <p>可选和可变参数应该在 @param 标记中说明清楚. 虽然这两个规定对编译器没有任何影响, 但还是请尽量遵守</p>
-<h5>Getters 和 Setters</h5>
+<h5 id="getters-setters">Getters 和 Setters</h5>
 <p>Getters 和 setters 并不是必要的. 但只要使用它们了, 就请将 getters 命名成 getFoo() 形式, 将 setters 命名成 setFoo(value) 形式. (对于布尔类型的 getters, 使用 isFoo() 也可.)</p>
-<h4>命名空间</h4>
-<p>JavaScript 不支持包和命名空间.<br>不容易发现和调试全局命名的冲突, 多个系统集成时还可能因为命名冲突导致很严重的问题. 为了提高 JavaScript 代码复用率, 我们遵循下面的约定以避免冲突.</p>
-<h5>为全局代码使用命名空间</h5>
-<p>在全局作用域上, 使用一个唯一的, 与工程 / 库相关的名字作为前缀标识. 比如, 你的工程是 “Project Sloth”, 那么命名空间前缀可取为 sloth.*.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h4 id="-">命名空间</h4>
+<p>JavaScript 不支持包和命名空间.
+不容易发现和调试全局命名的冲突, 多个系统集成时还可能因为命名冲突导致很严重的问题. 为了提高 JavaScript 代码复用率, 我们遵循下面的约定以避免冲突.</p>
+<h5 id="-">为全局代码使用命名空间</h5>
+<p>在全局作用域上, 使用一个唯一的, 与工程 / 库相关的名字作为前缀标识. 比如, 你的工程是 &quot;Project Sloth&quot;, 那么命名空间前缀可取为 sloth.*.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
 5
 </pre></td><td class="code"><pre><span class="keyword">var</span> sloth = {};
 
-sloth.sleep = <span class="keyword">function</span>() {
+sloth.sleep = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
   ...
 };
 </pre></td></tr></table></figure>
 
 <p>许多 JavaScript 库, 包括 the Closure Library and Dojo toolkit 为你提供了声明你自己的命名空间的函数. 比如:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
 5
 </pre></td><td class="code"><pre>goog.provide(<span class="string">'sloth'</span>);
 
-sloth.sleep = <span class="keyword">function</span>() {
+sloth.sleep = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
   ...
 };
 </pre></td></tr></table></figure>
 
-<h5>明确命名空间所有权</h5>
-<p>当选择了一个子命名空间, 请确保父命名空间的负责人知道你在用哪个子命名空间, 比如说, 你为工程 ‘sloths’ 创建一个 ‘hats’ 子命名空间, 那确保 Sloth 团队人员知道你在使用 sloth.hats.</p>
-<h5>外部代码和内部代码使用不同的命名空间</h5>
-<p>“外部代码” 是指来自于你代码体系的外部, 可以独立编译. 内外部命名应该严格保持独立. 如果你使用了外部库, 他的所有对象都在 foo.hats.<em> 下, 那么你自己的代码不能在 foo.hats.</em>下命名, 因为很有可能其他团队也在其中命名.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h5 id="-">明确命名空间所有权</h5>
+<p>当选择了一个子命名空间, 请确保父命名空间的负责人知道你在用哪个子命名空间, 比如说, 你为工程 &#39;sloths&#39; 创建一个 &#39;hats&#39; 子命名空间, 那确保 Sloth 团队人员知道你在使用 sloth.hats.</p>
+<h5 id="-">外部代码和内部代码使用不同的命名空间</h5>
+<p>&quot; 外部代码 &quot; 是指来自于你代码体系的外部, 可以独立编译. 内外部命名应该严格保持独立. 如果你使用了外部库, 他的所有对象都在 foo.hats.<em> 下, 那么你自己的代码不能在 foo.hats.</em>下命名, 因为很有可能其他团队也在其中命名.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -463,13 +478,13 @@ sloth.sleep = <span class="keyword">function</span>() {
  * @constructor
  * @extend {foo.hats.RoundHat}
  */</span>
-foo.hats.BowlerHat = <span class="keyword">function</span>() {
+foo.hats.BowlerHat = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
 };
 </pre></td></tr></table></figure>
 
-<h4>重命名那些名字很长的变量, 提高可读性</h4>
+<h4 id="-">重命名那些名字很长的变量, 提高可读性</h4>
 <p>主要是为了提高可读性. 局部空间中的变量别名只需要取原名字的最后部分.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -490,25 +505,25 @@ foo.hats.BowlerHat = <span class="keyword">function</span>() {
 </pre></td><td class="code"><pre><span class="comment">/**
  * @constructor
  */</span>
-some.long.namespace.MyClass = <span class="keyword">function</span>() {
+some.long.namespace.MyClass = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
 };
 
 <span class="comment">/**
  * @param {some.long.namespace.MyClass} a
  */</span>
-some.long.namespace.MyClass.staticHelper = <span class="keyword">function</span>(a) {
+some.long.namespace.MyClass.staticHelper = <span class="function"><span class="keyword">function</span><span class="params">(a)</span> {</span>
   ...
 };
 
-myapp.main = <span class="keyword">function</span>() {
+myapp.main = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
   <span class="keyword">var</span> MyClass = some.long.namespace.MyClass;
   <span class="keyword">var</span> staticHelper = some.long.namespace.MyClass.staticHelper;
   staticHelper(<span class="keyword">new</span> MyClass());
 };
 </pre></td></tr></table></figure>
 
-<h4>除非是枚举类型, 不然不要访问别名变量的属性.</h4>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h4 id="-">除非是枚举类型, 不然不要访问别名变量的属性.</h4>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -533,7 +548,7 @@ some.long.namespace.Fruit = {
   BANANA: <span class="string">'b'</span>
 };
 
-myapp.main = <span class="keyword">function</span>() {
+myapp.main = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
   <span class="keyword">var</span> Fruit = some.long.namespace.Fruit;
   <span class="keyword">switch</span> (fruit) {
     <span class="keyword">case</span> Fruit.APPLE:
@@ -542,25 +557,28 @@ myapp.main = <span class="keyword">function</span>() {
       ...
   }
 };
-myapp.main = <span class="keyword">function</span>() {
+myapp.main = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
   <span class="keyword">var</span> MyClass = some.long.namespace.MyClass;
   MyClass.staticHelper(<span class="literal">null</span>);
 };
 </pre></td></tr></table></figure>
 
 <p>不要在全局范围内创建别名, 而仅在函数块作用域中使用.</p>
-<h4>文件名</h4>
+<h4 id="-">文件名</h4>
 <p>文件名应该使用小写字符, 以避免在有些系统平台上不识别大小写的命名方式. 文件名以.js 结尾, 不要包含除 - 和 <em> 外的标点符号 (使用 - 优于 </em>).</p>
-<h4>自定义 toString() 方法</h4>
-<p>应该总是成功调用且不要抛异常.<br>可自定义 toString() 方法, 但确保你的实现方法满足: (1) 总是成功 (2) 没有其他负面影响. 如果不满足这两个条件, 那么可能会导致严重的问题, 比如, 如果 toString() 调用了包含 assert 的函数, assert 输出导致失败的对象, 这在 toString() 也会被调用.</p>
-<h4>延迟初始化</h4>
-<p>可以<br>没必要在每次声明变量时就将其初始化.</p>
-<h4>明确作用域</h4>
-<p>任何时候都需要<br>任何时候都要明确作用域 - 提高可移植性和清晰度. 例如, 不要依赖于作用域链中的 window 对象. 可能在其他应用中, 你函数中的 window 不是指之前的那个窗口对象.</p>
-<h4>代码格式化</h4>
-<h5>大括号</h5>
+<h4 id="-tostring-">自定义 toString() 方法</h4>
+<p>应该总是成功调用且不要抛异常.
+可自定义 toString() 方法, 但确保你的实现方法满足: (1) 总是成功 (2) 没有其他负面影响. 如果不满足这两个条件, 那么可能会导致严重的问题, 比如, 如果 toString() 调用了包含 assert 的函数, assert 输出导致失败的对象, 这在 toString() 也会被调用.</p>
+<h4 id="-">延迟初始化</h4>
+<p>可以
+没必要在每次声明变量时就将其初始化.</p>
+<h4 id="-">明确作用域</h4>
+<p>任何时候都需要
+任何时候都要明确作用域 - 提高可移植性和清晰度. 例如, 不要依赖于作用域链中的 window 对象. 可能在其他应用中, 你函数中的 window 不是指之前的那个窗口对象.</p>
+<h4 id="-">代码格式化</h4>
+<h5 id="-">大括号</h5>
 <p>分号会被隐式插入到代码中, 所以你务必在同一行上插入大括号. 例如:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -572,16 +590,16 @@ myapp.main = <span class="keyword">function</span>() {
   }
 </pre></td></tr></table></figure>
 
-<h5>数组和对象的初始化</h5>
+<h5 id="-">数组和对象的初始化</h5>
 <p>如果初始值不是很长, 就保持写在单行上:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];  <span class="comment">// No space after [ or before ].</span>
 <span class="keyword">var</span> obj = {a: <span class="number">1</span>, b: <span class="number">2</span>, c: <span class="number">3</span>};  <span class="comment">// No space after { or before }.</span>
 </pre></td></tr></table></figure>
 
 <p>初始值占用多行时, 缩进 2 个空格.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -631,9 +649,9 @@ goog.dom.createDom(goog.dom.TagName.DIV, {
 }, <span class="string">'Hello, world!'</span>);
 </pre></td></tr></table></figure>
 
-<h5>函数参数</h5>
+<h5 id="-">函数参数</h5>
 <p>尽量让函数参数在同一行上. 如果一行超过 80 字符, 每个参数独占一行, 并以 4 个空格缩进, 或者与括号对齐, 以提高可读性. 尽可能不要让每行超过 80 个字符. 比如下面这样:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -668,19 +686,19 @@ goog.dom.createDom(goog.dom.TagName.DIV, {
 33
 </pre></td><td class="code"><pre><span class="comment">// Four-space, wrap at 80.  Works with very long function names, survives</span>
 <span class="comment">// renaming without reindenting, low on space.</span>
-goog.foo.bar.doThingThatIsVeryDifficultToExplain = <span class="keyword">function</span>(
+goog.foo.bar.doThingThatIsVeryDifficultToExplain = <span class="function"><span class="keyword">function</span><span class="params">(
     veryDescriptiveArgumentNumberOne, veryDescriptiveArgumentTwo,
-    tableModelEventHandlerProxy, artichokeDescriptorAdapterIterator) {
+    tableModelEventHandlerProxy, artichokeDescriptorAdapterIterator)</span> {</span>
   <span class="comment">// ...</span>
 };
 
 <span class="comment">// Four-space, one argument per line.  Works with long function names,</span>
 <span class="comment">// survives renaming, and emphasizes each argument.</span>
-goog.foo.bar.doThingThatIsVeryDifficultToExplain = <span class="keyword">function</span>(
+goog.foo.bar.doThingThatIsVeryDifficultToExplain = <span class="function"><span class="keyword">function</span><span class="params">(
     veryDescriptiveArgumentNumberOne,
     veryDescriptiveArgumentTwo,
     tableModelEventHandlerProxy,
-    artichokeDescriptorAdapterIterator) {
+    artichokeDescriptorAdapterIterator)</span> {</span>
   <span class="comment">// ...</span>
 };
 
@@ -701,9 +719,9 @@ goog.foo.bar.doThingThatIsVeryDifficultToExplain = <span class="keyword">functio
 }
 </pre></td></tr></table></figure>
 
-<h5>传递匿名函数</h5>
+<h5 id="-">传递匿名函数</h5>
 <p>如果参数中有匿名函数, 函数体从调用该函数的左边开始缩进 2 个空格, 而不是从 function 这个关键字开始. 这让匿名函数更加易读 (不要增加很多没必要的缩进让函数体显示在屏幕的右侧).</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -714,11 +732,11 @@ goog.foo.bar.doThingThatIsVeryDifficultToExplain = <span class="keyword">functio
 9
 10
 11
-</pre></td><td class="code"><pre><span class="keyword">var</span> names = items.map(<span class="keyword">function</span>(item) {
+</pre></td><td class="code"><pre><span class="keyword">var</span> names = items.map(<span class="function"><span class="keyword">function</span><span class="params">(item)</span> {</span>
                         <span class="keyword">return</span> item.name;
                       });
 
-prefix.something.reallyLongFunctionName(<span class="string">'whatever'</span>, <span class="keyword">function</span>(a1, a2) {
+prefix.something.reallyLongFunctionName(<span class="string">'whatever'</span>, <span class="function"><span class="keyword">function</span><span class="params">(a1, a2)</span> {</span>
   <span class="keyword">if</span> (a1.equals(a2)) {
     someOtherLongFunctionName(a1);
   } <span class="keyword">else</span> {
@@ -727,9 +745,9 @@ prefix.something.reallyLongFunctionName(<span class="string">'whatever'</span>, 
 });
 </pre></td></tr></table></figure>
 
-<h5>更多的缩进</h5>
+<h5 id="-">更多的缩进</h5>
 <p>事实上, 除了 初始化数组和对象 , 和传递匿名函数外, 所有被拆开的多行文本要么选择与之前的表达式左对齐, 要么以 4 个 (而不是 2 个) 空格作为一缩进层次.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -777,9 +795,9 @@ someValue = <span class="keyword">this</span>.foo(
 }
 </pre></td></tr></table></figure>
 
-<h5>空行</h5>
+<h5 id="-">空行</h5>
 <p>使用空行来划分一组逻辑上相关联的代码片段.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -795,9 +813,9 @@ nowDoSomethingWith(y);
 andNowWith(z);
 </pre></td></tr></table></figure>
 
-<h5>二元和三元操作符</h5>
+<h5 id="-">二元和三元操作符</h5>
 <p>操作符始终跟随着前行, 这样就不用顾虑分号的隐式插入问题. 如果一行实在放不下, 还是按照上述的缩进风格来换行.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -819,26 +837,28 @@ andNowWith(z);
         moreComplicatedC;
 </pre></td></tr></table></figure>
 
-<h5>括号</h5>
-<p>只在需要的时候使用<br>不要滥用括号, 只在必要的时候使用它.</p>
+<h5 id="-">括号</h5>
+<p>只在需要的时候使用
+不要滥用括号, 只在必要的时候使用它.</p>
 <p>对于一元操作符 (如 delete, typeof 和 void ), 或是在某些关键词 (如 return, throw, case, new ) 之后, 不要使用括号.</p>
-<h5>字符串</h5>
-<p>使用 &#39; 优于 &quot;<br>无论你选择单引号还是双引号都无所谓，在 JavaScript 中它们在解析上没有区别。而<strong>绝对需要</strong>强制的是一致性。 <strong>永远不要在同一个项目中混用两种引号，选择一种，并保持一致</strong>。</p>
+<h5 id="-">字符串</h5>
+<p>使用 &#39; 优于 &quot;
+无论你选择单引号还是双引号都无所谓，在 JavaScript 中它们在解析上没有区别。而<strong>绝对需要</strong>强制的是一致性。 <strong>永远不要在同一个项目中混用两种引号，选择一种，并保持一致</strong>。</p>
 <p>单引号 (&#39;) 优于双引号 (&quot;). 当你创建一个包含 HTML 代码的字符串时就知道它的好处了.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="keyword">var</span> msg = <span class="string">'This is some HTML'</span>;
 </pre></td></tr></table></figure>
 
-<h5>前置逗号（Comma First）</h5>
+<h5 id="-comma-first-">前置逗号（Comma First）</h5>
 <p>请勿使用。所有使用这个文档作为基本风格指南的项目都不允许前置逗号的代码格式，除非明确指定或者作者要求。</p>
-<h5>注释</h5>
+<h5 id="-">注释</h5>
 <ul>
 <li>单行注释放于代码上方为首选</li>
 <li>多行也可以</li>
 <li>行末注释应被避免!</li>
 <li>JSDoc 的方式也不错，但需要比较多的时间</li>
 </ul>
-<h5>使用 JSDoc</h5>
+<h5 id="-jsdoc">使用 JSDoc</h5>
 <p>我们使用 JSDoc 中的注释风格. 行内注释使用 // 变量 的形式. 另外, 我们也遵循 C++ 代码注释风格 . 这也就是说你需要:</p>
 <ul>
 <li>版权和著作权的信息,</li>
@@ -850,9 +870,9 @@ andNowWith(z);
 </ul>
 <p>现在假设维护这段代码的是一位初学者. 这可能正好是这样的!</p>
 <p>目前很多编译器可从 JSDoc 中提取类型信息, 来对代码进行验证, 删除和压缩. 因此, 你很有必要去熟悉正确完整的 JSDoc .</p>
-<h5>顶层 / 文件注释</h5>
+<h5 id="-">顶层 / 文件注释</h5>
 <p>顶层注释用于告诉不熟悉这段代码的读者这个文件中包含哪些东西. 应该提供文件的大体内容, 它的作者, 依赖关系和兼容性信息. 如下:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -868,9 +888,9 @@ andNowWith(z);
  */</span>
 </pre></td></tr></table></figure>
 
-<h5>类注释</h5>
+<h5 id="-">类注释</h5>
 <p>每个类的定义都要附带一份注释, 描述类的功能和用法. 也需要说明构造器参数. 如果该类继承自其它类, 应该使用 @extends 标记. 如果该类是对接口的实现, 应该使用 @implements 标记.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -888,15 +908,15 @@ andNowWith(z);
  * @constructor
  * @extends {goog.Disposable}
  */</span>
-project.MyClass = <span class="keyword">function</span>(arg1, arg2) {
+project.MyClass = <span class="function"><span class="keyword">function</span><span class="params">(arg1, arg2)</span> {</span>
   <span class="comment">// ...</span>
 };
 goog.inherits(project.MyClass, goog.Disposable);
 </pre></td></tr></table></figure>
 
-<h5>方法与函数的注释</h5>
+<h5 id="-">方法与函数的注释</h5>
 <p>提供参数的说明. 使用完整的句子, 并用第三人称来书写方法说明.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -919,7 +939,7 @@ goog.inherits(project.MyClass, goog.Disposable);
  * @param {string} arg1 An argument that makes this more interesting.
  * @return {string} Some return value.
  */</span>
-project.MyClass.prototype.someMethod = <span class="keyword">function</span>(arg1) {
+project.MyClass.prototype.someMethod = <span class="function"><span class="keyword">function</span><span class="params">(arg1)</span> {</span>
   <span class="comment">// ...</span>
 };
 
@@ -935,7 +955,7 @@ project.MyClass.prototype.someMethod = <span class="keyword">function</span>(arg
 </pre></td></tr></table></figure>
 
 <p>对于一些简单的, 不带参数的 getters, 说明可以忽略.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -944,14 +964,14 @@ project.MyClass.prototype.someMethod = <span class="keyword">function</span>(arg
 </pre></td><td class="code"><pre><span class="comment">/**
  * @return {Element} The element for the component.
  */</span>
-goog.ui.Component.prototype.getElement = <span class="keyword">function</span>() {
+goog.ui.Component.prototype.getElement = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
   <span class="keyword">return</span> <span class="keyword">this</span>.element_;
 };
 </pre></td></tr></table></figure>
 
-<h5>属性注释</h5>
+<h5 id="-">属性注释</h5>
 <p>也需要对属性进行注释.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -963,9 +983,9 @@ goog.ui.Component.prototype.getElement = <span class="keyword">function</span>()
 project.MyClass.prototype.someProperty = <span class="number">4</span>;
 </pre></td></tr></table></figure>
 
-<h5>JSDoc 缩进</h5>
+<h5 id="jsdoc-">JSDoc 缩进</h5>
 <p>如果你在 @param, @return, @supported, @this 或 @deprecated 中断行, 需要像在代码中一样, 使用 4 个空格作为一个缩进层次.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -982,14 +1002,14 @@ project.MyClass.prototype.someProperty = <span class="number">4</span>;
  * @return {number} This returns something that has a description too long to
  *     fit in one line.
  */</span>
-project.MyClass.prototype.method = <span class="keyword">function</span>(foo) {
+project.MyClass.prototype.method = <span class="function"><span class="keyword">function</span><span class="params">(foo)</span> {</span>
   <span class="keyword">return</span> <span class="number">5</span>;
 };
 </pre></td></tr></table></figure>
 
 <p>不要在 @fileoverview 标记中进行缩进.</p>
 <p>虽然不建议, 但也可对说明文字进行适当的排版对齐. 不过, 这样带来一些负面影响, 就是当你每次修改变量名时, 都得重新排版说明文字以保持和变量名对齐.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1006,13 +1026,13 @@ project.MyClass.prototype.method = <span class="keyword">function</span>(foo) {
  * @return {number} This returns something that has a description too long to
  *                  fit in one line.
  */</span>
-project.MyClass.prototype.method = <span class="keyword">function</span>(foo) {
+project.MyClass.prototype.method = <span class="function"><span class="keyword">function</span><span class="params">(foo)</span> {</span>
   <span class="keyword">return</span> <span class="number">5</span>;
 };
 </pre></td></tr></table></figure>
 
-<h5>枚举</h5>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h5 id="-">枚举</h5>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1033,7 +1053,7 @@ project.TriState = {
 </pre></td></tr></table></figure>
 
 <p>注意一下, 枚举也具有有效类型, 所以可以当成参数类型来用.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1044,15 +1064,16 @@ project.TriState = {
  * Sets project state.
  * @param {project.TriState} state New project state.
  */</span>
-project.setState = <span class="keyword">function</span>(state) {
+project.setState = <span class="function"><span class="keyword">function</span><span class="params">(state)</span> {</span>
   <span class="comment">// ...</span>
 };
 </pre></td></tr></table></figure>
 
-<h3>JavaScript 语言规范</h3>
-<h4>变量</h4>
-<p>声明变量必须加上 var 关键字.<br>当你没有写 var, 变量就会暴露在全局上下文中, 这样很可能会和现有变量冲突. 另外, 如果没有加上, 很难明确该变量的作用域是什么, 变量也很可能像在局部作用域中, 很轻易地泄漏到 Document 或者 Window 中, 所以务必用 var 去声明变量.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h3 id="javascript-">JavaScript 语言规范</h3>
+<h4 id="-">变量</h4>
+<p>声明变量必须加上 var 关键字.
+当你没有写 var, 变量就会暴露在全局上下文中, 这样很可能会和现有变量冲突. 另外, 如果没有加上, 很难明确该变量的作用域是什么, 变量也很可能像在局部作用域中, 很轻易地泄漏到 Document 或者 Window 中, 所以务必用 var 去声明变量.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1150,10 +1171,11 @@ project.setState = <span class="keyword">function</span>(state) {
   }
 </pre></td></tr></table></figure>
 
-<h4>常量</h4>
+<h4 id="-">常量</h4>
 <p>常量的形式如: NAMES_LIKE_THIS, 即使用大写字符, 并用下划线分隔. 你也可用 @const 标记来指明它是一个常量. 但请永远不要使用 const 关键词.</p>
-<p>Decision:<br>对于基本类型的常量, 只需转换命名.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<p>Decision:
+对于基本类型的常量, 只需转换命名.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1168,7 +1190,7 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>对于非基本类型, 使用 @const 标记.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1194,10 +1216,10 @@ project.setState = <span class="keyword">function</span>(state) {
 
 <p>这标记告诉编译器它是常量.</p>
 <p>至于关键词 const, 因为 IE 不能识别, 所以不要使用.</p>
-<h4>分号</h4>
+<h4 id="-">分号</h4>
 <p>总是使用分号.</p>
 <p>如果仅依靠语句间的隐式分隔, 有时会很麻烦. 你自己更能清楚哪里是语句的起止. 而且有些情况下, 漏掉分号会很危险，可能会导致代码合并错误等，又比如:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1213,11 +1235,11 @@ project.setState = <span class="keyword">function</span>(state) {
 14
 </pre></td><td class="code"><pre>
     <span class="comment">// 1.</span>
-    MyClass.prototype.myMethod = <span class="keyword">function</span>() {
+    MyClass.prototype.myMethod = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
       <span class="keyword">return</span> <span class="number">42</span>;
     }  <span class="comment">// No semicolon here.</span>
 
-    (<span class="keyword">function</span>() {
+    (<span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>
       <span class="comment">// Some initialization code wrapped in a function to create a scope for locals.</span>
     })();
 
@@ -1229,14 +1251,15 @@ project.setState = <span class="keyword">function</span>(state) {
 
 <p>这段代码会发生些什么诡异事呢?</p>
 <ol>
-<li>报 JavaScript 错误 - 例子 1 上的语句会解释成, 一个函数带一匿名函数作为参数而被调用, 返回 42 后, 又一次被“调用”, 这就导致了错误.</li>
-<li>当 resultOfOperation() 返回非 NaN 时, 就会调用 die, 其结果也会赋给 THINGS_TO_EAT.<br>为什么?</li>
+<li>报 JavaScript 错误 - 例子 1 上的语句会解释成, 一个函数带一匿名函数作为参数而被调用, 返回 42 后, 又一次被 &quot; 调用 &quot;, 这就导致了错误.</li>
+<li>当 resultOfOperation() 返回非 NaN 时, 就会调用 die, 其结果也会赋给 THINGS_TO_EAT.
+为什么?</li>
 </ol>
-<p>JavaScript 的语句以分号作为结束符, 除非可以非常准确推断某结束位置才会省略分号. 上面的例子产出错误, 均是在语句中声明了函数 / 对象 / 数组直接量, 但 闭括号 (‘}’或‘]’) 并不足以表示该语句的结束. 在 JavaScript 中, 只有当语句后的下一个符号是后缀或括号运算符时, 才会认为该语句的结束. 参考：<a href="http://justjavac.iteye.com/blog/1852405" target="_blank">JS 分号自动插入机制</a></p>
+<p>JavaScript 的语句以分号作为结束符, 除非可以非常准确推断某结束位置才会省略分号. 上面的例子产出错误, 均是在语句中声明了函数 / 对象 / 数组直接量, 但 闭括号 (&#39;}&#39; 或 &#39;]&#39;) 并不足以表示该语句的结束. 在 JavaScript 中, 只有当语句后的下一个符号是后缀或括号运算符时, 才会认为该语句的结束. 参考：<a href="http://justjavac.iteye.com/blog/1852405" target="_blank">JS 分号自动插入机制</a></p>
 <p>遗漏分号有时会出现很奇怪的结果, 所以确保语句以分号结束.</p>
-<h4>块内函数声明</h4>
+<h4 id="-">块内函数声明</h4>
 <p>不要在块内声明一个函数，不要写成:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre>  <span class="keyword">if</span> (x) {
@@ -1245,57 +1268,59 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>虽然很多 JS 引擎都支持块内声明函数, 但它不属于 ECMAScript 规范 (见 <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm" target="_blank">ECMA-262</a>, 第 13 和 14 条). 各个浏览器糟糕的实现相互不兼容, 有些也与未来 ECMAScript 草案相违背. ECMAScript 只允许在脚本的根语句或函数中声明函数. 如果确实需要在块中定义函数, 建议使用函数表达式来初始化变量:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre>  <span class="keyword">if</span> (x) {
-    <span class="keyword">var</span> foo = <span class="keyword">function</span>() {}
+    <span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span>}
   }
 </pre></td></tr></table></figure>
 
-<h4>标准特性</h4>
-<p>标准特性总是优于非标准特性.<br>最大化可移植性和兼容性, 尽量使用标准方法而不是用非标准方法, (比如, 优先用 string.charAt(3) 而不用 string[3] , 通过 DOM 原生函数访问元素, 而不是使用应用封装好的快速接口.</p>
-<h4>不要封装基本类型</h4>
+<h4 id="-">标准特性</h4>
+<p>标准特性总是优于非标准特性.
+最大化可移植性和兼容性, 尽量使用标准方法而不是用非标准方法, (比如, 优先用 string.charAt(3) 而不用 string[3] , 通过 DOM 原生函数访问元素, 而不是使用应用封装好的快速接口.</p>
+<h4 id="-">不要封装基本类型</h4>
 <p>没有任何理由去封装基本类型, 另外还存在一些风险:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-</pre></td><td class="code"><pre>  <span class="keyword">var</span> x = <span class="keyword">new</span> Boolean(<span class="literal">false</span>);
+</pre></td><td class="code"><pre>  <span class="keyword">var</span> x = <span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="literal">false</span>);
   <span class="keyword">if</span> (x) {
     alert(<span class="string">'hi'</span>);  <span class="comment">// Shows 'hi'.</span>
   }
 </pre></td></tr></table></figure>
 
 <p>除非明确用于类型转换, 其他情况请千万不要这样做！</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
 5
 6
-</pre></td><td class="code"><pre>  <span class="keyword">var</span> x = Boolean(<span class="number">0</span>);
+</pre></td><td class="code"><pre>  <span class="keyword">var</span> x = <span class="built_in">Boolean</span>(<span class="number">0</span>);
   <span class="keyword">if</span> (x) {
     alert(<span class="string">'hi'</span>);  <span class="comment">// This will never be alerted.</span>
   }
-  <span class="keyword">typeof</span> Boolean(<span class="number">0</span>) == <span class="string">'boolean'</span>;
-  <span class="keyword">typeof</span> <span class="keyword">new</span> Boolean(<span class="number">0</span>) == <span class="string">'object'</span>;
+  <span class="keyword">typeof</span> <span class="built_in">Boolean</span>(<span class="number">0</span>) == <span class="string">'boolean'</span>;
+  <span class="keyword">typeof</span> <span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="number">0</span>) == <span class="string">'object'</span>;
 </pre></td></tr></table></figure>
 
 <p>有时用作 number, string 或 boolean 时, 类型的转换会非常实用.</p>
-<h4>闭包</h4>
-<p>可以, 但小心使用.<br>闭包也许是 JS 中最有用的特性了. 有一份比较好的介绍闭包原理的<a href="http://jibbering.com/faq/notes/closures/" target="_blank">文档</a>.</p>
+<h4 id="-">闭包</h4>
+<p>可以, 但小心使用.
+闭包也许是 JS 中最有用的特性了. 有一份比较好的介绍闭包原理的<a href="http://jibbering.com/faq/notes/closures/" target="_blank">文档</a>.</p>
 <p>有一点需要牢记, 闭包保留了一个指向它封闭作用域的指针, 所以, 在给 DOM 元素附加闭包时, 很可能会产生循环引用, 进一步导致内存泄漏. 比如下面的代码:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre>  <span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">(element, a, b)</span> {</span>
-    element.onclick = <span class="keyword">function</span>() { <span class="comment">/* uses a and b */</span> };
+    element.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> <span class="comment">/* uses a and b */</span> };
   }
 </pre></td></tr></table></figure>
 
 <p>这里, 即使没有使用 element, 闭包也保留了 element, a 和 b 的引用, 由于 element 也保留了对闭包的引用, 这就产生了循环引用, 这就不能被 GC 回收. 这种情况下, 可将代码重构为:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1307,14 +1332,15 @@ project.setState = <span class="keyword">function</span>(state) {
   }
 
   <span class="function"><span class="keyword">function</span> <span class="title">bar</span><span class="params">(a, b)</span> {</span>
-    <span class="keyword">return</span> <span class="keyword">function</span>() { <span class="comment">/* uses a and b */</span> }
+    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span> <span class="comment">/* uses a and b */</span> }
   }
 </pre></td></tr></table></figure>
 
-<h4>eval()</h4>
-<p>只用于解析序列化串 (如: 解析 RPC 响应), 而且解析序列号字符串用 JSON.parse() 会更好，所以最好放弃使用 eval().<br>eval() 会让程序执行的比较混乱, 当 eval() 里面包含用户输入的话就更加危险. 可以用其他更佳的, 更清晰, 更安全的方式写你的代码, 所以一般情况下请不要使用 eval(). 当碰到一些需要解析序列化串的情况下 (如, 计算 RPC 响应), 使用 eval 很容易实现.</p>
+<h4 id="eval-">eval()</h4>
+<p>只用于解析序列化串 (如: 解析 RPC 响应), 而且解析序列号字符串用 JSON.parse() 会更好，所以最好放弃使用 eval().
+eval() 会让程序执行的比较混乱, 当 eval() 里面包含用户输入的话就更加危险. 可以用其他更佳的, 更清晰, 更安全的方式写你的代码, 所以一般情况下请不要使用 eval(). 当碰到一些需要解析序列化串的情况下 (如, 计算 RPC 响应), 使用 eval 很容易实现.</p>
 <p>解析序列化串是指将字节流转换成内存中的数据结构. 比如, 你可能会将一个对象输出成文件形式:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1344,7 +1370,7 @@ project.setState = <span class="keyword">function</span>(state) {
 
 <p>很简单地调用 eval 后, 把表示成文件的数据读取回内存中.</p>
 <p>类似的, eval() 对 RPC 响应值进行解码. 例如, 你在使用 XMLHttpRequest 发出一个 RPC 请求后, 通过 eval () 将服务端的响应文本转成 JavaScript 对象:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1363,14 +1389,15 @@ project.setState = <span class="keyword">function</span>(state) {
   <span class="comment">// Server returns:</span>
   <span class="comment">// userOnline = true;</span>
   <span class="keyword">if</span> (xmlhttp.status == <span class="number">200</span>) {
-    eval(xmlhttp.responseText);
+    <span class="built_in">eval</span>(xmlhttp.responseText);
   }
   <span class="comment">// userOnline is now true.</span>
 </pre></td></tr></table></figure>
 
-<h4>with() {}</h4>
-<p>不要使用<br>使用 with 让你的代码在语义上变得不清晰. 因为 with 的对象, 可能会与局部变量产生冲突, 从而改变你程序原本的用义. 下面的代码是干嘛的?</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h4 id="with-">with() {}</h4>
+<p>不要使用
+使用 with 让你的代码在语义上变得不清晰. 因为 with 的对象, 可能会与局部变量产生冲突, 从而改变你程序原本的用义. 下面的代码是干嘛的?</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1381,16 +1408,18 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>答案: 任何事. 局部变量 x 可能被 foo 的属性覆盖, 当它定义一个 setter 时, 在赋值 3 后会执行很多其他代码. 所以不要使用 with 语句.</p>
-<h4>this</h4>
-<p>仅在对象构造器, 方法, 闭包中使用.<br>this 的语义很特别. 有时它引用一个全局对象 (大多数情况下), 调用者的作用域 (使用 eval 时), DOM 树中的节点 (添加事件处理函数时), 新创建的对象 (使用一个构造器), 或者其他对象 (如果函数被 call() 或 apply()).</p>
+<h4 id="this">this</h4>
+<p>仅在对象构造器, 方法, 闭包中使用.
+this 的语义很特别. 有时它引用一个全局对象 (大多数情况下), 调用者的作用域 (使用 eval 时), DOM 树中的节点 (添加事件处理函数时), 新创建的对象 (使用一个构造器), 或者其他对象 (如果函数被 call() 或 apply()).</p>
 <p>使用时很容易出错, 所以只有在下面两个情况时才能使用:</p>
 <ul>
 <li>在构造器中</li>
 <li>对象的方法 (包括创建的闭包) 中</li>
 </ul>
-<h4>for-in 循环</h4>
-<p>只用于 object/map/hash 的遍历<br>对 Array 用 for-in 循环有时会出错. 因为它并不是从 0 到 length - 1 进行遍历, 而是所有出现在对象及其原型链的键值. 下面就是一些失败的使用案例:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h4 id="for-in-">for-in 循环</h4>
+<p>只用于 object/map/hash 的遍历
+对 Array 用 for-in 循环有时会出错. 因为它并不是从 0 到 length - 1 进行遍历, 而是所有出现在对象及其原型链的键值. 下面就是一些失败的使用案例:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1427,7 +1456,7 @@ project.setState = <span class="keyword">function</span>(state) {
 
   printArray([<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]);  <span class="comment">// This works.</span>
 
-  <span class="keyword">var</span> a = <span class="keyword">new</span> Array(<span class="number">10</span>);
+  <span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">10</span>);
   printArray(a);  <span class="comment">// This is wrong.</span>
 
   a = document.getElementsByTagName(<span class="string">'*'</span>);
@@ -1437,7 +1466,7 @@ project.setState = <span class="keyword">function</span>(state) {
   a.buhu = <span class="string">'wine'</span>;
   printArray(a);  <span class="comment">// This is wrong again.</span>
 
-  a = <span class="keyword">new</span> Array;
+  a = <span class="keyword">new</span> <span class="built_in">Array</span>;
   a[<span class="number">3</span>] = <span class="number">3</span>;
   printArray(a);  <span class="comment">// This is wrong again.</span>
 
@@ -1450,9 +1479,9 @@ project.setState = <span class="keyword">function</span>(state) {
   }
 </pre></td></tr></table></figure>
 
-<h4>多行字符串</h4>
+<h4 id="-">多行字符串</h4>
 <p>不要使用. 不要这样写长字符串:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1467,10 +1496,10 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>在编译时, 不能忽略行起始位置的空白字符 ; &quot;\&quot; 后的空白字符会产生奇怪的错误 ; 虽然大多数脚本引擎支持这种写法, 但它不是 ECMAScript 的标准规范.</p>
-<h4>Array 和 Object 直接量</h4>
+<h4 id="array-object-">Array 和 Object 直接量</h4>
 <p>使用 Array 和 Object 语法, 而不使用 Array 和 Object 构造器.</p>
 <p>使用 Array 构造器很容易因为传参不恰当导致错误.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1484,23 +1513,23 @@ project.setState = <span class="keyword">function</span>(state) {
 12
 13
 </pre></td><td class="code"><pre>  <span class="comment">// Length is 3.</span>
-  <span class="keyword">var</span> a1 = <span class="keyword">new</span> Array(x1, x2, x3);
+  <span class="keyword">var</span> a1 = <span class="keyword">new</span> <span class="built_in">Array</span>(x1, x2, x3);
 
   <span class="comment">// Length is 2.</span>
-  <span class="keyword">var</span> a2 = <span class="keyword">new</span> Array(x1, x2);
+  <span class="keyword">var</span> a2 = <span class="keyword">new</span> <span class="built_in">Array</span>(x1, x2);
 
   <span class="comment">// If x1 is a number and it is a natural number the length will be x1.</span>
   <span class="comment">// If x1 is a number but not a natural number this will throw an exception.</span>
   <span class="comment">// Otherwise the array will have one element with x1 as its value.</span>
-  <span class="keyword">var</span> a3 = <span class="keyword">new</span> Array(x1);
+  <span class="keyword">var</span> a3 = <span class="keyword">new</span> <span class="built_in">Array</span>(x1);
 
   <span class="comment">// Length is 0.</span>
-  <span class="keyword">var</span> a4 = <span class="keyword">new</span> Array();
+  <span class="keyword">var</span> a4 = <span class="keyword">new</span> <span class="built_in">Array</span>();
 </pre></td></tr></table></figure>
 
 <p>如果传入一个参数而不是 2 个参数, 数组的长度很有可能就不是你期望的数值了.</p>
 <p>为了避免这些歧义, 我们应该使用更易读的直接量来声明.</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1511,16 +1540,16 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>虽然 Object 构造器没有上述类似的问题, 但鉴于可读性和一致性考虑, 最好还是在字面上更清晰地指明. 例如：</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
 5
 6
 7
-</pre></td><td class="code"><pre>  <span class="keyword">var</span> o = <span class="keyword">new</span> Object();
+</pre></td><td class="code"><pre>  <span class="keyword">var</span> o = <span class="keyword">new</span> <span class="built_in">Object</span>();
 
-  <span class="keyword">var</span> o2 = <span class="keyword">new</span> Object();
+  <span class="keyword">var</span> o2 = <span class="keyword">new</span> <span class="built_in">Object</span>();
   o2.a = <span class="number">0</span>;
   o2.b = <span class="number">1</span>;
   o2.c = <span class="number">2</span>;
@@ -1528,7 +1557,7 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>应该写成:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1546,12 +1575,12 @@ project.setState = <span class="keyword">function</span>(state) {
   };
 </pre></td></tr></table></figure>
 
-<h4>不要修改内置对象的原型</h4>
+<h4 id="-">不要修改内置对象的原型</h4>
 <p>千万不要修改内置对象, 如 Object.prototype 和 Array.prototype 的原型. 而修改内置对象, 如 Function.prototype 的原型, 虽然少危险些, 但仍会导致调试时的诡异现象. 所以也要避免修改其原型.</p>
-<h3>JavaScript 小技巧 (Tips and Tricks)</h3>
-<h4>True 和 False 布尔表达式</h4>
+<h3 id="javascript-tips-and-tricks-">JavaScript 小技巧 (Tips and Tricks)</h3>
+<h4 id="true-false-">True 和 False 布尔表达式</h4>
 <p>下面的布尔表达式都返回 false:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1562,7 +1591,7 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>但小心下面的, 可都返回 true:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre><span class="string">'0'</span>   <span class="comment">// 字符串 0</span>
@@ -1571,27 +1600,27 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>下面段比较糟糕的代码:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="keyword">while</span> (x != <span class="literal">null</span>) {
 </pre></td></tr></table></figure>
 
 <p>你可以直接写成下面的形式 (只要你希望 x 不是 0 和空字符串, 和 false):</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="keyword">while</span> (x) {
 </pre></td></tr></table></figure>
 
 <p>如果你想检查字符串是否为 null 或空:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="keyword">if</span> (y != <span class="literal">null</span> && y != <span class="string">''</span>) {
 </pre></td></tr></table></figure>
 
 <p>但这样会更好:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="keyword">if</span> (y) {
 </pre></td></tr></table></figure>
 
 <p>注意: 还有很多需要注意的地方, 如:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1608,28 +1637,28 @@ project.setState = <span class="keyword">function</span>(state) {
 15
 16
 17
-</pre></td><td class="code"><pre>    Boolean(<span class="string">'0'</span>) == <span class="literal">true</span>
+</pre></td><td class="code"><pre>    <span class="built_in">Boolean</span>(<span class="string">'0'</span>) == <span class="literal">true</span>
     <span class="string">'0'</span> != <span class="literal">true</span>
     <span class="number">0</span> != <span class="literal">null</span>
     <span class="number">0</span> == []
     <span class="number">0</span> == <span class="literal">false</span>
-    Boolean(<span class="literal">null</span>) == <span class="literal">false</span>
+    <span class="built_in">Boolean</span>(<span class="literal">null</span>) == <span class="literal">false</span>
     <span class="literal">null</span> != <span class="literal">true</span>
     <span class="literal">null</span> != <span class="literal">false</span>
-    Boolean(<span class="literal">undefined</span>) == <span class="literal">false</span>
+    <span class="built_in">Boolean</span>(<span class="literal">undefined</span>) == <span class="literal">false</span>
     <span class="literal">undefined</span> != <span class="literal">true</span>
     <span class="literal">undefined</span> != <span class="literal">false</span>
-    Boolean([]) == <span class="literal">true</span>
+    <span class="built_in">Boolean</span>([]) == <span class="literal">true</span>
     [] != <span class="literal">true</span>
     [] == <span class="literal">false</span>
-    Boolean({}) == <span class="literal">true</span>
+    <span class="built_in">Boolean</span>({}) == <span class="literal">true</span>
     {} != <span class="literal">true</span>
     {} != <span class="literal">false</span>
 </pre></td></tr></table></figure>
 
-<h4>条件 (三元) 操作符 (?:)</h4>
+<h4 id="-">条件 (三元) 操作符 (?:)</h4>
 <p>三元操作符用于替代下面的代码:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1642,12 +1671,12 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>你可以写成:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>  <span class="keyword">return</span> val ? foo() : bar();
 </pre></td></tr></table></figure>
 
 <p>在生成 HTML 代码时也是很有用的:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1657,10 +1686,10 @@ project.setState = <span class="keyword">function</span>(state) {
       <span class="string">' name="foo"&gt;'</span>;
 </pre></td></tr></table></figure>
 
-<h4>&amp;&amp; 和 ||</h4>
+<h4 id="-">&amp;&amp; 和 ||</h4>
 <p>二元布尔操作符是可短路的, 只有在必要时才会计算到最后一项.</p>
-<p>“||” 被称作为 ‘default’ 操作符, 因为可以这样:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<p>&quot;||&quot; 被称作为 &#39;default&#39; 操作符, 因为可以这样:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1683,7 +1712,7 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>你可以使用它来简化上面的代码:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1695,8 +1724,8 @@ project.setState = <span class="keyword">function</span>(state) {
     }
 </pre></td></tr></table></figure>
 
-<p>“&amp;&amp;” 也可简短代码. 比如:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<p>&quot;&amp;&amp;&quot; 也可简短代码. 比如:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1713,7 +1742,7 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>你可以像这样来使用:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre>    <span class="keyword">if</span> (node && node.kids && node.kids[index]) {
@@ -1722,7 +1751,7 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>或者:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1733,13 +1762,13 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>不过这样就有点儿过头了:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>    node && node.kids && node.kids[index] && foo(node.kids[index]);
 </pre></td></tr></table></figure>
 
-<h4>使用 join() 来创建字符串</h4>
+<h4 id="-join-">使用 join() 来创建字符串</h4>
 <p>通常是这样使用的:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1764,7 +1793,7 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>但这样在 IE 下非常慢, 可以用下面的方式:</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1780,31 +1809,31 @@ project.setState = <span class="keyword">function</span>(state) {
     }
 </pre></td></tr></table></figure>
 
-<p>你也可以是用数组作为字符串构造器, 然后通过 myArray.join(‘’) 转换成字符串. 不过由于赋值操作快于数组的 push(), 所以尽量使用赋值操作.</p>
-<h4>类型检测 (来源于 jQuery Core Style Guidelines)</h4>
+<p>你也可以是用数组作为字符串构造器, 然后通过 myArray.join(&#39;&#39;) 转换成字符串. 不过由于赋值操作快于数组的 push(), 所以尽量使用赋值操作.</p>
+<h4 id="-jquery-core-style-guidelines-">类型检测 (来源于 jQuery Core Style Guidelines)</h4>
 <ul>
 <li><p>直接类型（实际类型，Actual Types）</p>
 <p>  String:</p>
-<pre><code>  <span class="title">typeof</span> variable === <span class="string">"string"</span></code></pre>
-<p>  Number:</p>
-<pre><code>  <span class="title">typeof</span> variable === <span class="string">"number"</span></code></pre>
-<p>  Boolean:</p>
-<pre><code>  <span class="title">typeof</span> variable === <span class="string">"boolean"</span></code></pre>
-<p>  Object:</p>
-<pre><code>  <span class="title">typeof</span> variable === <span class="string">"object"</span></code></pre>
-<p>  Array:</p>
-<pre><code>  <span class="built_in">Array</span>.<span class="built_in">isArray</span>(arrayLikeObject)
-  (如果可能的话)</code></pre>
-<p>  Node:</p>
-<pre><code>  <span class="filename">elem.nodeType === 1</code></pre>
-<p>  null:</p>
-<pre><code>  <span class="keyword">variable</span> === <span class="keyword">null</span></code></pre>
-<p>  null or undefined:</p>
-<pre><code>  <span class="keyword">variable</span> == <span class="keyword">null</span></code></pre>
-<p>  undefined:</p>
+<pre><code>  typeof variable === &quot;string&quot;
+</code></pre><p>  Number:</p>
+<pre><code>  typeof variable === &quot;number&quot;
+</code></pre><p>  Boolean:</p>
+<pre><code>  typeof variable === &quot;boolean&quot;
+</code></pre><p>  Object:</p>
+<pre><code>  typeof variable === &quot;object&quot;
+</code></pre><p>  Array:</p>
+<pre><code>  Array.isArray(arrayLikeObject)
+  (如果可能的话)
+</code></pre><p>  Node:</p>
+<pre><code>  elem.nodeType === 1
+</code></pre><p>  null:</p>
+<pre><code>  variable === null
+</code></pre><p>  null or undefined:</p>
+<pre><code>  variable == null
+</code></pre><p>  undefined:</p>
 <pre><code>全局变量:
 
-  <span class="keyword">typeof</span> variable === <span class="string">"undefined"</span>
+  typeof variable === &quot;undefined&quot;
 
 局部变量:
 
@@ -1812,22 +1841,22 @@ project.setState = <span class="keyword">function</span>(state) {
 
 属性:
 
-  <span class="keyword">object</span>.prop === undefined
-  <span class="keyword">object</span>.hasOwnProperty(prop)
-  <span class="string">"prop"</span> <span class="keyword">in</span> <span class="keyword">object</span></code></pre>
-</li>
+  object.prop === undefined
+  object.hasOwnProperty(prop)
+  &quot;prop&quot; in object
+</code></pre></li>
 <li><p>转换类型（强制类型，Coerced Types）</p>
-<p>  考虑下面这个的含义…</p>
+<p>  考虑下面这个的含义...</p>
 <p>  给定的 HTML:</p>
 </li>
 </ul>
-<figure class="highlight lang-html"><table><tr><td class="gutter"><pre>1
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre>
     <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">id</span>=<span class="value">"foo-input"</span> <span class="attribute">value</span>=<span class="value">"1"</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1897,8 +1926,8 @@ project.setState = <span class="keyword">function</span>(state) {
     <span class="comment">// `importantTask()` 将被调用</span>
 </pre></td></tr></table></figure>
 
-<pre><code>对于强制类型转换这里有几个例子:</code></pre>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<pre><code>对于强制类型转换这里有几个例子:
+</code></pre><figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -1962,7 +1991,7 @@ project.setState = <span class="keyword">function</span>(state) {
     <span class="comment">// "false"</span>
 </pre></td></tr></table></figure>
 
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -2014,7 +2043,7 @@ project.setState = <span class="keyword">function</span>(state) {
     <span class="comment">// true</span>
 </pre></td></tr></table></figure>
 
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -2051,7 +2080,7 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td><td class="code"><pre>
     <span class="keyword">var</span> num = <span class="number">2.5</span>;
 
-    parseInt(num, <span class="number">10</span>);
+    <span class="built_in">parseInt</span>(num, <span class="number">10</span>);
 
     <span class="comment">// 等价于...</span>
 
@@ -2068,7 +2097,7 @@ project.setState = <span class="keyword">function</span>(state) {
 
     <span class="keyword">var</span> neg = -<span class="number">2.5</span>;
 
-    parseInt(neg, <span class="number">10</span>);
+    <span class="built_in">parseInt</span>(neg, <span class="number">10</span>);
 
     <span class="comment">// 等价于...</span>
 
@@ -2088,7 +2117,7 @@ project.setState = <span class="keyword">function</span>(state) {
 <li>字符串转换为整数</li>
 </ul>
 <p>将字符串转换为整数有以下几种方式，可以在<a href="http://jsperf.com/converting-string-to-int/2" target="_blank">这里</a>进行测试对比：</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -2101,20 +2130,20 @@ project.setState = <span class="keyword">function</span>(state) {
 11
 </pre></td><td class="code"><pre>    <span class="keyword">var</span> number1 = <span class="string">"45"</span>;
     <span class="comment">// ParseInt() Test on chrome for mac:31% slower</span>
-    <span class="keyword">var</span> i = parseInt(number1);
+    <span class="keyword">var</span> i = <span class="built_in">parseInt</span>(number1);
     <span class="comment">// Using unary Test on chrome for mac:67% slower</span>
     <span class="keyword">var</span> j = +number1;
     <span class="comment">// Number constructor Test on chrome for mac:59% slower</span>
-    <span class="keyword">var</span> k = Number(number1);
+    <span class="keyword">var</span> k = <span class="built_in">Number</span>(number1);
     <span class="comment">// By multplication Test on chrome for mac:69% slower</span>
     <span class="keyword">var</span> l = number1 * <span class="number">1</span>;
     <span class="comment">// parseInt with Test on chrome for mac:radix ±3.85% fastest</span>
-    <span class="keyword">var</span> m = parseInt(number1, <span class="number">10</span>);
+    <span class="keyword">var</span> m = <span class="built_in">parseInt</span>(number1, <span class="number">10</span>);
 </pre></td></tr></table></figure>
 
 <p>所以推荐使用 parseInt(number1, 10) 这种方式，不过 +number1 更为简单，在操作次数极少的情况下也可以酌情使用。</p>
-<h4>对比运算</h4>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<h4 id="-">对比运算</h4>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -2217,7 +2246,7 @@ project.setState = <span class="keyword">function</span>(state) {
 </pre></td></tr></table></figure>
 
 <p>总是判断最好、最精确的值，上述是指南而非教条。</p>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -2257,12 +2286,12 @@ project.setState = <span class="keyword">function</span>(state) {
     <span class="string">""</span>, <span class="number">0</span>, <span class="literal">null</span>, <span class="literal">undefined</span>, <span class="literal">NaN</span>, <span class="keyword">void</span> <span class="number">0</span>
 </pre></td></tr></table></figure>
 
-<h4>Misc</h4>
+<h4 id="misc">Misc</h4>
 <p>这个部分将要说明的想法和理念都并非教条。相反更鼓励对现存实践保持好奇，以尝试提供完成一般 JavaScript 编程任务的更好方案。</p>
 <ul>
 <li>提前返回值提升代码的可读性并且没有太多性能上的差别</li>
 </ul>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -2309,7 +2338,7 @@ project.setState = <span class="keyword">function</span>(state) {
 <ul>
 <li>for 循环遍历</li>
 </ul>
-<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -2329,7 +2358,7 @@ project.setState = <span class="keyword">function</span>(state) {
     <span class="comment">// 前一种方式只会计算一次 arr 的长度，而后一种方式会计算 arr.length + 1 次，效率比较低</span>
 </pre></td></tr></table></figure>
 
-<h2>保持一致性.</h2>
+<h2 id="-">保持一致性.</h2>
 <p>当你在编辑代码之前, 先花一些时间查看一下现有代码的风格. 如果他们给算术运算符添加了空格, 你也应该添加. 如果他们的注释使用一个个星号盒子, 那么也请你使用这种方式.</p>
 <p>代码风格中一个关键点是整理一份常用词汇表, 开发者认同它并且遵循, 这样在代码中就能统一表述. 我们在这提出了一些全局上的风格规则, 但也要考虑自身情况形成自己的代码风格. 但如果你添加的代码和现有的代码有很大的区别, 这就让阅读者感到很不和谐. 所以, 避免这种情况的发生.</p>
 
@@ -2445,9 +2474,16 @@ project.setState = <span class="keyword">function</span>(state) {
   
     <li><a href="/tags/reading/">读书</a><small>2</small></li>
   
-    <li><a href="/tags/essay/">随感</a><small>26</small></li>
+    <li><a href="/tags/essay/">随感</a><small>27</small></li>
   
   </ul>
+</div>
+
+
+  <div class="trace-invest">
+    <span>
+        <a href="http://traceinvest.com" target="_blank">欢迎光临我的美股投资相关网站 :</br>traceinvest.com</a>
+    </span>
 </div>
 
 
@@ -2455,6 +2491,10 @@ project.setState = <span class="keyword">function</span>(state) {
 <div class="widget tag">
   <h3 class="title">最新文章</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/essay/blankness/">空白</a>
+      </li>
     
       <li>
         <a href="/investment/capital-gains-tax/">关于美国资本利得税</a>
@@ -2469,7 +2509,7 @@ project.setState = <span class="keyword">function</span>(state) {
       </li>
     
       <li>
-        <a href="/tech/kindwill-domain-for-sale/">Domain for Sale——kindwill.com</a>
+        <a href="/tech/kindwill-domain-for-sale/">Domain for Sale——Kindwill.Com</a>
       </li>
     
       <li>
@@ -2481,7 +2521,7 @@ project.setState = <span class="keyword">function</span>(state) {
       </li>
     
       <li>
-        <a href="/tech/js-style/">Javascript 编码规范</a>
+        <a href="/tech/js-style/">Java Script 编码规范</a>
       </li>
     
       <li>
@@ -2493,25 +2533,14 @@ project.setState = <span class="keyword">function</span>(state) {
       </li>
     
       <li>
-        <a href="/tech/dance-training-manage-system/">Dance Training Manage System Based on Mongodb and Node</a>
+        <a href="/tech/dance-training-manage-system/">Dance Training Manage System Based on Mongo Db and Node</a>
       </li>
     
       <li>
         <a href="/life/the-beauty-of-county/">歙县之美</a>
       </li>
     
-      <li>
-        <a href="/essay/two-horses/">古有两驹</a>
-      </li>
-    
   </ul>
-</div>
-
-
-  <div class="trace-invest">
-    <span>
-        <a href="http://traceinvest.com" target="_blank">欢迎光临我的美股投资相关网站 :</br>traceinvest.com</a>
-    </span>
 </div>
 
 </aside>
@@ -2520,7 +2549,7 @@ project.setState = <span class="keyword">function</span>(state) {
   <div id="go-pg-top"><i class="icon-arrow-up"></i></div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2013 hustcer
+  &copy; 2014 hustcer
   
 </div>
 <div class="clearfix"></div></footer>
