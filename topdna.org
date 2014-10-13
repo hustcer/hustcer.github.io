@@ -25,7 +25,7 @@ server {
   access_log        /var/log/nginx/topdna/access.log;
 
   # Path for static files
-  root /var/www/topdna.org/public;
+  # root /var/www/topdna.org/public;
 
   #Specify a charset
   charset utf-8;
@@ -35,7 +35,7 @@ server {
   error_page 404 500 502 503 504 /500.html;
 
   # Include the basic h5bp config set
-  include h5bp/basic.conf;
+  # include h5bp/basic.conf;
 
   location / {
         proxy_set_header X-Real-IP $remote_addr;
@@ -43,7 +43,7 @@ server {
         proxy_set_header Host $http_host;
         proxy_set_header X-NginX-Proxy true;
 
-        proxy_pass       http://topdna.org:8899/;
+        proxy_pass       http://localhost:8899/;
         proxy_redirect   off;
     }
 }
